@@ -26,8 +26,10 @@
 
 @media (max-width: 900px) {
   .footer {
-    margin: 5px;
-    padding: 5px;
+    margin: 0px, 5.5px;
+    padding: 1.5px, 0px;
     text-align: center;
+    width: 100%;
+    font-size: 14px;
   }
 }

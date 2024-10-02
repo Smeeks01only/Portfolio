@@ -23,7 +23,7 @@ function Footer() {
           LinkedIn
         </a>
       </p>
-      <p></p>
+
       <p>&copy; 2024 </p>
     </div>
   );
