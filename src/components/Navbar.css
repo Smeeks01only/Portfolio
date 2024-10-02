@@ -41,3 +41,9 @@
 .nav-links a:hover {
   color: #2b2b2f; /* Color change on hover for better visibility */
 }
+
+@media (max-width: 900px) {
+  .nav-links li {
+    margin: 5px;
+  }
+}

@@ -54,3 +54,11 @@ h6 {
   -webkit-background-clip: text; /* Ensures the gradient clips to the text */
   -webkit-text-fill-color: transparent; /* Makes the inside of the text transparent */
 }
+
+@media (max-width: 900px) {
+  .home {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+  }
+}

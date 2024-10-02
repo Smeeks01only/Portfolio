@@ -9,13 +9,10 @@ const Projects = () => {
         <div className="project">
           <h3>University of Zimbabwe Blog Web App</h3>
           <p>
-            StudyBuddy helps students manage tasks and track study time. Users
-            can create tasks, set time goals, and use a built-in timer to
-            monitor progress. It also provides productivity stats to visualize
-            progress. The University of Zimbabwe Blog Web App was made to allow
-            students to get access information about all that is happening in
-            and around the campus of UZ. So all the student just has to visit
-            the website and get all the information.
+            The University of Zimbabwe Blog Web App was made to allow students
+            to get access information about all that is happening in and around
+            the campus of UZ. So all the student just has to visit the website
+            and get all the information.
           </p>
           <br></br>
           <p>HTML, CSS, JavaScript, ReactJS, Django, MySQL.</p>
