@@ -1,0 +1,56 @@
+.home {
+  padding: 0rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Typing cursor effect */
+.description {
+  overflow: hidden;
+  border-right: 2px solid black; /* Cursor effect */
+  width: 100%; /* Adjust as necessary */
+  display: inline-block;
+  animation: blink 0.7s infinite; /* Blinking cursor */
+  font-size: normal;
+  background: linear-gradient(to right, #003366, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%; /* Ensures the text container width is limited */
+}
+
+/* Blinking cursor keyframes */
+@keyframes blink {
+  0% {
+    border-color: black;
+  }
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: black;
+  }
+}
+
+/* Apply gradient text to h1, h2, etc. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 2.5rem;
+  background: linear-gradient(
+    to right,
+    #003366,
+    #000000
+  ); /* Dark blue to black */
+  -webkit-background-clip: text; /* Ensures the gradient clips to the text */
+  -webkit-text-fill-color: transparent; /* Makes the inside of the text transparent */
+}
