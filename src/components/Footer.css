@@ -23,3 +23,11 @@
 .footer p {
   margin: 0.5rem 0;
 }
+
+@media (max-width: 900px) {
+  .footer {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+  }
+}
