@@ -1,0 +1,93 @@
+/* styles/Footer.css */
+.footer {
+  background-color: var(--primary-color);
+  color: var(--light-text);
+  padding: 60px 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.footer-logo {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav a {
+  color: var(--light-text);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.footer-nav a:hover {
+  opacity: 0.7;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: var(--light-text);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.social-icon:hover {
+  background-color: var(--light-text);
+  color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.footer-bottom a {
+  color: var(--light-text);
+  text-decoration: none;
+  opacity: 0.7;
+  transition: var(--transition);
+}
+
+.footer-bottom a:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
