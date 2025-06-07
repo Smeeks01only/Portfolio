@@ -1,4 +1,3 @@
-// components/About.jsx
 import React from "react";
 import My_Picture from "../../assets/images/My_Picture.png";
 import "./About.css";
@@ -7,44 +6,51 @@ function About() {
   return (
     <section id="about" className="about">
       <div className="container">
-        <h2 className="section-title">About Me</h2>
+        <div className="about-header">
+          <h2 className="section-title">About Me</h2>
+          <p className="section-subtitle">
+            Curious mind. Creative soul. Tech explorer.
+          </p>
+        </div>
+
         <div className="about-content">
           <div className="about-image">
-            <div className="image-placeholder">
-              <img src={My_Picture} />
-            </div>
+            <img src={My_Picture} alt="My portrait" className="profile-image" />
           </div>
+
           <div className="about-text">
             <p>
-              A smart, hardworking, introverted young man with a deep love for
-              Technology and Science. I'm constantly curious about how things
-              work and enjoy exploring new technologies and concepts.
+              I’m a curious, hardworking, and introverted individual with a
+              strong love for technology and science. I enjoy learning how
+              things work and constantly explore new tools and ideas in tech.
             </p>
             <p>
-              Besides coding I love writing short stories, poems and reading
-              books. I also enjoy watching Formula 1 races and watching and
-              playing football. I also like going out for walks to refresh
-              myself and explore nature.
+              When I'm not coding, I write poems and short stories, read books,
+              enjoy Formula 1, play football, and go on refreshing walks to
+              reconnect with nature.
             </p>
+
             <div className="about-interests">
-              <div className="interest">
-                <span className="interest-icon">📚</span>
-                <span>Reading</span>
-              </div>
-              <div className="interest">
-                <span className="interest-icon">⚽</span>
-                <span>Football</span>
-              </div>
-              <div className="interest">
-                <span className="interest-icon">✍️</span>
-                <span>Poetry</span>
-              </div>
-              <div className="interest">
-                <span className="interest-icon">🎵</span>
-                <span>Music</span>
-              </div>
+              {[
+                { icon: "📚", label: "Reading" },
+                { icon: "⚽", label: "Football" },
+                { icon: "✍️", label: "Poetry" },
+                { icon: "🎵", label: "Music" },
+              ].map((interest, i) => (
+                <div className="interest" key={i}>
+                  <span className="interest-icon">{interest.icon}</span>
+                  <span className="interest-label">{interest.label}</span>
+                </div>
+              ))}
             </div>
           </div>
+        </div>
+
+        <div className="about-footer">
+          <p className="quote">
+            "Code is poetry, and every bug is just a story waiting to be
+            resolved."
+          </p>
         </div>
       </div>
     </section>

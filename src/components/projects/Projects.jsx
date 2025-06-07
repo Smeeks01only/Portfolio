@@ -1,5 +1,6 @@
 // components/Projects.jsx
-import React, { useState } from "react";
+import React from "react";
+import { GitHub, Visibility } from "@mui/icons-material";
 import "./Projects.css";
 
 function Projects() {
@@ -40,25 +41,23 @@ function Projects() {
         <h2 className="section-title">Projects</h2>
         <div className="projects-grid">
           {projects.map((project, index) => (
-            <div
-              className="project-card"
-              key={index}
-              onMouseEnter={() => setActiveProject(index)}
-              onMouseLeave={() => setActiveProject(null)}
-            >
-              <div className={`project-image ${project.image}`}>
-                <div className={`project-overlay`}>
-                  <h3>{project.title}</h3>
-                  <p>{project.description}</p>
-                  <div className="project-tech">
-                    {project.tech.map((tech, i) => (
-                      <span key={i} className="tech-tag">
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                  <a href="#" className="project-link">
-                    View Project
+            <div className={`project-card ${project.image}`} key={index}>
+              <div className="project-info">
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+                <div className="project-tech">
+                  {project.tech.map((tech, i) => (
+                    <span key={i} className="tech-tag">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                <div className="project-actions">
+                  <a href="#" className="icon-button" title="View Project">
+                    <Visibility />
+                  </a>
+                  <a href="#" className="icon-button" title="Source Code">
+                    <GitHub />
                   </a>
                 </div>
               </div>
