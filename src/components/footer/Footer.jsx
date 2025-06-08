@@ -3,6 +3,7 @@ import React from "react";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import XIcon from "@mui/icons-material/X";
+import Smeeks from "../../assets/images/Smeeks_Logo.png";
 import "./Footer.css";
 
 function Footer() {
@@ -15,7 +16,7 @@ function Footer() {
           <div className="footer-logo">
             <a href="#home" className="logo">
               <img
-                src="../../../public/Smeeks_Logo.png"
+                src={Smeeks}
                 alt="Logo"
                 className="logo-img"
               />

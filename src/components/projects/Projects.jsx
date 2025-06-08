@@ -33,6 +33,14 @@ function Projects() {
       tech: ["ReactJS", "HTML", "CSS", "JavaScript"],
       image: "engineering-site",
     },
+
+    {
+      title: "Tinashe's ChatBot",
+      description:
+        " A chatbot built with ReactJS and API, designed to answer questions you would like to ask.",
+      tech: ["ReactJS", "JavaScript"],
+      image: "chatbot",
+    },
   ];
 
   return (
@@ -56,7 +64,11 @@ function Projects() {
                   <a href="#" className="icon-button" title="View Project">
                     <Visibility />
                   </a>
-                  <a href="#" className="icon-button" title="Source Code">
+                  <a
+                    href="https://github.com/Smeeks01only"
+                    className="icon-button"
+                    title="Source Code"
+                  >
                     <GitHub />
                   </a>
                 </div>

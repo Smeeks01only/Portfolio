@@ -98,6 +98,10 @@
   background-color: #3498db;
 }
 
+.project-card.chatbot {
+  background-color: #264653;
+}
+
 @media (max-width: 576px) {
   .projects-grid {
     grid-template-columns: 1fr;

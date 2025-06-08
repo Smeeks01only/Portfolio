@@ -5,6 +5,7 @@ import InfoIcon from "@mui/icons-material/Info";
 import BuildIcon from "@mui/icons-material/Build";
 import WorkIcon from "@mui/icons-material/Work";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
+import Smeeks from "../../assets/images/Smeeks_Logo.png"
 import "./Navbar.css";
 
 function Navbar() {
@@ -34,7 +35,7 @@ function Navbar() {
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="navbar-container">
         <a href="#home" className="logo">
-          <img src="../../../public/Smeeks_Logo.png" alt="Logo" className="logo-img" />
+          <img src={Smeeks} alt="Logo" className="logo-img" />
         </a>
 
         <div
