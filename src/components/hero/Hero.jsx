@@ -1,6 +1,7 @@
 // components/Hero.jsx
 import React from "react";
 import "./Hero.css";
+import Hero_Image from "../../assets/images/programmer_office.png";
 
 function Hero() {
   return (
@@ -20,10 +21,7 @@ function Hero() {
           </div>
         </div>
         <div className="hero-image fade-in delay-4">
-          <img
-            src="https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=800&q=80"
-            alt="Creative tech workspace"
-          />
+          <img src={Hero_Image} alt="Creative tech workspace" />
         </div>
       </div>
     </section>

@@ -41,6 +41,13 @@ function Projects() {
       tech: ["ReactJS", "JavaScript"],
       image: "chatbot",
     },
+
+    {
+      title: "See More Projects",
+      description: "Click her to check out more of my work on GitHub.",
+      tech: ["GitHub"],
+      image: "see-more",
+    },
   ];
 
   return (
@@ -49,7 +56,23 @@ function Projects() {
         <h2 className="section-title">Projects</h2>
         <div className="projects-grid">
           {projects.map((project, index) => (
-            <div className={`project-card ${project.image}`} key={index}>
+            <div
+              className={`project-card ${
+                project.title === "See More Projects"
+                  ? "see-more"
+                  : project.image
+              }`}
+              key={index}
+              onClick={() => {
+                if (project.title === "See More Projects") {
+                  window.open("https://github.com/Smeeks01only", "_blank");
+                }
+              }}
+              style={{
+                cursor:
+                  project.title === "See More Projects" ? "pointer" : "default",
+              }}
+            >
               <div className="project-info">
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
@@ -60,18 +83,20 @@ function Projects() {
                     </span>
                   ))}
                 </div>
-                <div className="project-actions">
-                  <a href="#" className="icon-button" title="View Project">
-                    <Visibility />
-                  </a>
-                  <a
-                    href="https://github.com/Smeeks01only"
-                    className="icon-button"
-                    title="Source Code"
-                  >
-                    <GitHub />
-                  </a>
-                </div>
+
+                {project.title !== "See More Projects" && (
+                  <div className="project-actions">
+                    <a
+                      href="https://github.com/Smeeks01only"
+                      className="icon-button"
+                      title="Source Code"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <GitHub />
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
           ))}

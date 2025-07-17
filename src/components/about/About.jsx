@@ -47,10 +47,10 @@ function About() {
         </div>
 
         <div className="about-footer">
-          <p className="quote">
-            "Code is poetry, and every bug is just a story waiting to be
-            resolved."
-          </p>
+          <blockquote className="quote">
+            “Code is poetry, and every bug is just a story waiting to be
+            resolved.”
+          </blockquote>
         </div>
       </div>
     </section>

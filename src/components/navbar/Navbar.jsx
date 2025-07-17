@@ -1,11 +1,12 @@
 // components/Navbar.jsx
 import React, { useState, useEffect } from "react";
-import HomeIcon from "@mui/icons-material/Home";
-import InfoIcon from "@mui/icons-material/Info";
-import BuildIcon from "@mui/icons-material/Build";
-import WorkIcon from "@mui/icons-material/Work";
-import ContactMailIcon from "@mui/icons-material/ContactMail";
-import Smeeks from "../../assets/images/Smeeks_Logo.png"
+import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
+import BuildOutlinedIcon from "@mui/icons-material/BuildOutlined";
+import WorkOutlineOutlinedIcon from "@mui/icons-material/WorkOutlineOutlined";
+import ContactMailOutlinedIcon from "@mui/icons-material/ContactMailOutlined";
+
+import Smeeks from "../../assets/images/Smeeks_Logo.png";
 import "./Navbar.css";
 
 function Navbar() {
@@ -24,11 +25,26 @@ function Navbar() {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   const menuItems = [
-    // { href: "#home", label: "Home", icon: <HomeIcon /> },
-    { href: "#about", label: "About", icon: <InfoIcon /> },
-    { href: "#skills", label: "Skills", icon: <BuildIcon /> },
-    { href: "#projects", label: "Projects", icon: <WorkIcon /> },
-    { href: "#footer", label: "Contact", icon: <ContactMailIcon /> },
+    {
+      href: "#about",
+      label: "About",
+      icon: <InfoOutlinedIcon fontSize="medium" />,
+    },
+    {
+      href: "#skills",
+      label: "Skills",
+      icon: <BuildOutlinedIcon fontSize="medium" />,
+    },
+    {
+      href: "#projects",
+      label: "Projects",
+      icon: <WorkOutlineOutlinedIcon fontSize="medium" />,
+    },
+    {
+      href: "#footer",
+      label: "Contact",
+      icon: <ContactMailOutlinedIcon fontSize="medium" />,
+    },
   ];
 
   return (

@@ -1,41 +1,39 @@
 .about {
-  background: linear-gradient(to bottom right, #f8f9fc, #e3e8f0);
-  min-height: 85vh;
+  background: linear-gradient(to bottom right, #f7f9fc, #e3e8f0);
+  padding: 80px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 60px 20px;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1140px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
+  gap: 50px;
 }
 
 .about-header {
   text-align: center;
-  margin-bottom: 40px;
 }
 
 .section-title {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: 700;
-  color: #222;
+  color: #111;
   margin-bottom: 10px;
+  letter-spacing: -0.5px;
 }
 
 .section-subtitle {
-  font-size: 1.2rem;
-  color: #666;
+  font-size: 1.1rem;
+  color: #555;
 }
 
 .about-content {
   display: flex;
-  gap: 50px;
+  gap: 60px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -43,21 +41,22 @@
 
 .about-image {
   flex: 1;
-  max-width: 320px;
+  max-width: 300px;
   text-align: center;
 }
 
 .profile-image {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1/1;
   object-fit: cover;
-  border-radius: 1rem;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile-image:hover {
-  transform: scale(1.03);
+  transform: scale(1.04);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
 }
 
 .about-text {
@@ -68,58 +67,96 @@
 }
 
 .about-text p {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   line-height: 1.8;
   color: #333;
+  margin: 0;
 }
-
 .about-interests {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   margin-top: 10px;
+  justify-content: flex-start;
 }
 
 .interest {
-  background-color: white;
-  padding: 20px 15px;
-  border-radius: 12px;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
-  min-width: 100px;
-  flex: 1 1 120px;
+  padding: 16px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-width: 100px;
+  flex: 1 1 120px;
+  transition: all 0.3s ease;
+  position: relative;
+  background: transparent;
+  cursor: default;
+}
+
+.interest::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.1),
+    rgba(0, 0, 0, 0.05)
+  );
+  z-index: -1;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.interest:hover::before {
+  opacity: 1;
 }
 
 .interest:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.15);
 }
 
 .interest-icon {
-  font-size: 1.8rem;
-  margin-bottom: 8px;
+  font-size: 1.9rem;
+  margin-bottom: 6px;
 }
 
 .interest-label {
   font-size: 0.95rem;
-  font-weight: 500;
-  color: #444;
+  font-weight: 600;
+  color: #222;
+  text-align: center;
 }
 
 .about-footer {
-  margin-top: 40px;
   text-align: center;
+  margin-top: 30px;
 }
 
 .quote {
   font-style: italic;
   color: #666;
-  font-size: 1rem;
-  max-width: 600px;
+  font-size: 1.05rem;
+  max-width: 700px;
   margin: 0 auto;
+  line-height: 1.7;
+  position: relative;
+}
+
+.quote::before,
+.quote::after {
+  content: '"';
+  color: #00aaff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: relative;
+  top: -3px;
 }
 
 @media (max-width: 768px) {
@@ -132,11 +169,16 @@
     align-items: center;
   }
 
-  .about-header .section-title {
-    font-size: 2rem;
+  .section-title {
+    font-size: 2.2rem;
   }
 
-  .about-header .section-subtitle {
+  .section-subtitle {
     font-size: 1rem;
+  }
+
+  .quote::before,
+  .quote::after {
+    font-size: 1.2rem;
   }
 }
