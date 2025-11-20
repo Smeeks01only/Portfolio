@@ -3,54 +3,81 @@ import My_Picture from "../../assets/images/My_Picture.png";
 import "./About.css";
 
 function About() {
+  const highlights = [
+    { icon: "🚀", label: "Fast Learner", desc: "Adapting to new tech" },
+    { icon: "✍️", label: "Tech Writer", desc: "Documentation & Poetry" },
+    { icon: "🧩", label: "Problem Solver", desc: "Logic & Creativity" },
+    { icon: "🌍", label: "Remote Ready", desc: "Timezone Flexible" },
+  ];
+
   return (
     <section id="about" className="about">
       <div className="container">
-        <div className="about-header">
-          <h2 className="section-title">About Me</h2>
-          <p className="section-subtitle">
-            Curious mind. Creative soul. Tech explorer.
-          </p>
+        <div className="section-header">
+          <h2 className="section-title">
+            <span className="number">01.</span> About Me
+          </h2>
+          <div className="line"></div>
         </div>
-
-        <div className="about-content">
-          <div className="about-image">
-            <img src={My_Picture} alt="My portrait" className="profile-image" />
+        {/* 1. Split Layout: Text Left, Image Right (Standard Desktop Pattern) */}
+        <div className="about-grid">
+          {/*Image Side*/}
+          <div className="about-image-wrapper fade-in-left">
+            <div className="image-frame">
+              <img
+                src={My_Picture}
+                alt="Tinashe Dzikiti"
+                className="profile-image"
+              />
+              {/* The Teal Border Effect */}
+              <div className="frame-outline"></div>
+            </div>
           </div>
 
-          <div className="about-text">
-            <p>
-              I’m a curious, hardworking, and introverted individual with a
-              strong love for technology and science. I enjoy learning how
-              things work and constantly explore new tools and ideas in tech.
-            </p>
-            <p>
-              When I'm not coding, I write poems and short stories, read books,
-              enjoy Formula 1, play football, and go on refreshing walks to
-              reconnect with nature.
+          {/*Text Side*/}
+          <div className="about-text-content fade-in-right">
+            {/* <div className="section-header">
+              <h2 className="section-title">
+                <span className="number">01.</span> About Me
+              </h2>
+              <div className="line"></div>
+            </div> */}
+
+            <p className="bio-text">
+              Hello! My name is Tinashe and I enjoy creating things that live on
+              the internet. My interest in software engineering started at the
+              <span className="highlight"> University of Zimbabwe</span>, where
+              I discovered that coding is the perfect mix of logic and creative
+              expression.
             </p>
 
-            <div className="about-interests">
-              {[
-                { icon: "📚", label: "Reading" },
-                { icon: "⚽", label: "Football" },
-                { icon: "✍️", label: "Poetry" },
-                { icon: "🎵", label: "Music" },
-              ].map((interest, i) => (
-                <div className="interest" key={i}>
-                  <span className="interest-icon">{interest.icon}</span>
-                  <span className="interest-label">{interest.label}</span>
+            <p className="bio-text">
+              I enjoy turning ideas into real products—whether that’s developing
+              <span className="highlight"> AI-powered solutions </span>
+              or crafting smooth, responsive interfaces in React. My work
+              focuses on clean architecture, efficiency, and user-centered
+              design.
+            </p>
+
+            <p className="bio-text">
+              When I'm not at my terminal, I'm likely writing poetry, watching
+              Formula 1, or taking nature walks to reset my mind for the next
+              debugging session.
+            </p>
+
+            {/* 2. The "Soft Skills" Grid */}
+            <div className="highlights-grid">
+              {highlights.map((item, i) => (
+                <div className="highlight-card" key={i}>
+                  <span className="h-icon">{item.icon}</span>
+                  <div className="h-text">
+                    <span className="h-label">{item.label}</span>
+                    <span className="h-desc">{item.desc}</span>
+                  </div>
                 </div>
               ))}
             </div>
           </div>
-        </div>
-
-        <div className="about-footer">
-          <blockquote className="quote">
-            “Code is poetry, and every bug is just a story waiting to be
-            resolved.”
-          </blockquote>
         </div>
       </div>
     </section>

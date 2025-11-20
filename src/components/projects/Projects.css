@@ -1,160 +1,95 @@
 .projects {
-  background-color: var(--secondary-color);
-  padding: 60px 20px;
-}
-
-.section-title {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 2rem;
-  color: var(--light-text);
-  color: black;
+  background-color: var(--bg-dark);
+  padding: 100px 0;
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  ); /* Better responsiveness */
+  gap: 15px;
+  margin-top: 50px;
 }
 
 .project-card {
-  padding: 16px 20px 20px; /* reduce top padding */
+  background-color: var(--bg-light);
+  padding: 2rem 1.75rem;
+  border-radius: 8px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
   display: flex;
   flex-direction: column;
-  position: relative;
-  justify-content: flex-start; /* previously was flex-end */
-  background-color: #1e1e1e; /* Fallback */
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-  /* padding: 20px; */
-  /* height: 320px; */
-  color: var(--light-text);
+  height: 100%; /* Equal height cards */
+  border: 1px solid transparent;
 }
 
 .project-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+  transform: translateY(-7px);
+  border-color: var(--primary-color); /* Teal border on hover */
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
 }
 
-/* Subtle background image layer */
-.project-card::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  bottom: 10px;
-  left: 10px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 80%;
-  opacity: 0.08;
-  z-index: 0;
+/*Top Icons (Folder & GitHub)*/
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
-.project-info {
-  position: relative;
-  z-index: 1;
+.folder-icon {
+  color: var(--primary-color);
 }
 
-.project-info h3 {
-  margin-top: 5px;
-  font-size: 1.3rem;
+.project-links a {
+  color: var(--text-light);
+  margin-left: 10px;
+  transition: color 0.2s;
 }
 
-.project-info p {
-  font-size: 0.95rem;
-  margin-bottom: 15px;
-  opacity: 0.9;
+.project-links a:hover {
+  color: var(--primary-color);
 }
 
-.project-tech {
+/*Title & Desc*/
+.project-title {
+  color: var(--text-light);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.project-card:hover .project-title {
+  color: var(--primary-color); /* Title turns teal on hover */
+}
+
+.project-desc {
+  color: var(--text-dim);
+  font-size: 1rem;
+  line-height: 1.6;
+  flex-grow: 1; /* Pushes the tech list to the bottom */
+}
+
+/*Tech List at Bottom*/
+.project-tech-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 15px;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  gap: 15px;
 }
 
-/* Slight polish to tech tags */
-.tech-tag {
-  background-color: rgba(255, 255, 255, 0.15);
-  padding: 4px 10px;
-  border-radius: 12px;
-  font-size: 0.75rem;
-  color: #fff;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(4px);
+.project-tech-list li {
+  font-family: monospace;
+  font-size: 0.85rem;
+  color: var(--text-dim);
 }
 
-.project-actions {
+/* See More Button Container*/
+.show-more-container {
+  margin-top: 80px;
   display: flex;
-  gap: 12px;
-}
-
-.icon-button {
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  padding: 6px;
-  border-radius: 50%;
-  transition: background-color 0.3s ease, transform 0.2s;
-}
-
-.icon-button:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  transform: scale(1.1);
-}
-
-/* Background colors for each project (theme per project) */
-.project-card.sports-blog {
-  background-color: #2c3e50;
-}
-
-.project-card.instagram-clone {
-  background-color: #e1306c;
-}
-
-.project-card.tesla-clone {
-  background-color: #111;
-}
-
-.project-card.engineering-site {
-  background-color: #3498db;
-}
-
-.project-card.chatbot {
-  background-color: #264653;
-}
-
-.project-card.sports-blog::after {
-  background-image: url("../../assets/images/programmer_office.png"); /* Example icon */
-}
-
-.project-card.instagram-clone::after {
-  background-image: url("../../assets/images/programmer_office.png");
-}
-
-.project-card.tesla-clone::after {
-  background-image: url("../../assets/images/programmer_office.png");
-}
-
-.project-card.engineering-site::after {
-  background-image: url("../../assets/images/programmer_office.png");
-}
-
-.project-card.chatbot::after {
-  background-image: url("../../assets/images/programmer_office.png");
-}
-
-/* Hover effect upgrade */
-.project-card:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
-}
-
-@media (max-width: 576px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
+  justify-content: center;
 }

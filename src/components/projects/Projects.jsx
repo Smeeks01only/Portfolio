@@ -1,105 +1,108 @@
-// components/Projects.jsx
 import React from "react";
-import { GitHub, Visibility } from "@mui/icons-material";
+import FolderOpenIcon from "@mui/icons-material/FolderOpen";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LaunchIcon from "@mui/icons-material/Launch";
 import "./Projects.css";
 
 function Projects() {
   const projects = [
     {
-      title: "Campus Sports Blog Web App",
+      title: "Campus Sports Blog",
       description:
-        "A dynamic blog platform for campus sports news and updates built with Django.",
-      tech: ["Python", "Django", "HTML/CSS"],
-      image: "sports-blog",
+        "A full-stack blog platform for university sports news. Built with a Django backend and a responsive template engine.",
+      tech: ["Django", "Python", "PostgreSQL"],
+      githubLink: "https://github.com/Smeeks01only/sports-blog",
+      liveLink: "#", // Add live link if you have one
     },
     {
       title: "Instagram Clone",
       description:
-        "A functional replica of Instagram featuring posting, following, and interaction capabilities.",
-      tech: ["React", "JavaScript", "CSS"],
-      image: "instagram-clone",
+        "A functional replica of Instagram's core features including image uploads, likes, and user authentication.",
+      tech: ["React", "Firebase", "Tailwind"],
+      githubLink: "https://github.com/Smeeks01only",
+      liveLink: "#",
     },
     {
-      title: "Tesla Website Clone",
+      title: "Tesla UI Clone",
       description:
-        "Pixel-perfect recreation of Tesla's website with responsive design and animations.",
-      tech: ["React", "JavaScript", "CSS", "React Router"],
-      image: "tesla-clone",
+        "Pixel-perfect recreation of the Tesla landing page, focusing on smooth animations and responsive layout.",
+      tech: ["React", "Framer Motion", "CSS"],
+      githubLink: "https://github.com/Smeeks01only",
+      liveLink: "#",
     },
     {
-      title: "Engineering Company Website",
+      title: "AI ChatBot",
       description:
-        "Professional website designed for a local engineering firm to showcase services and projects.",
-      tech: ["ReactJS", "HTML", "CSS", "JavaScript"],
-      image: "engineering-site",
+        "An intelligent conversational agent integrated with the OpenAI API to assist users with general queries.",
+      tech: ["React", "OpenAI API", "Node.js"],
+      githubLink: "https://github.com/Smeeks01only",
+      liveLink: "#",
     },
-
-    {
-      title: "Tinashe's ChatBot",
-      description:
-        " A chatbot built with ReactJS and API, designed to answer questions you would like to ask.",
-      tech: ["ReactJS", "JavaScript"],
-      image: "chatbot",
-    },
-
-    {
-      title: "See More Projects",
-      description: "Click her to check out more of my work on GitHub.",
-      tech: ["GitHub"],
-      image: "see-more",
-    },
+    // Tip: Add a project that solves a ZIMBABWEAN problem here if you can!
   ];
 
   return (
     <section id="projects" className="projects">
       <div className="container">
-        <h2 className="section-title">Projects</h2>
+        <div className="section-header">
+          <h2 className="section-title">
+            <span className="number">03.</span> Projects
+          </h2>
+          <div className="line"></div>
+        </div>
+
         <div className="projects-grid">
           {projects.map((project, index) => (
-            <div
-              className={`project-card ${
-                project.title === "See More Projects"
-                  ? "see-more"
-                  : project.image
-              }`}
-              key={index}
-              onClick={() => {
-                if (project.title === "See More Projects") {
-                  window.open("https://github.com/Smeeks01only", "_blank");
-                }
-              }}
-              style={{
-                cursor:
-                  project.title === "See More Projects" ? "pointer" : "default",
-              }}
-            >
-              <div className="project-info">
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
-                <div className="project-tech">
-                  {project.tech.map((tech, i) => (
-                    <span key={i} className="tech-tag">
-                      {tech}
-                    </span>
-                  ))}
+            <div className="project-card" key={index}>
+              <div className="card-top">
+                <div className="folder-icon">
+                  <FolderOpenIcon fontSize="large" />
                 </div>
-
-                {project.title !== "See More Projects" && (
-                  <div className="project-actions">
+                <div className="project-links">
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <GitHubIcon />
+                  </a>
+                  {project.liveLink !== "#" && (
                     <a
-                      href="https://github.com/Smeeks01only"
-                      className="icon-button"
-                      title="Source Code"
+                      href={project.liveLink}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <GitHub />
+                      <LaunchIcon />
                     </a>
-                  </div>
-                )}
+                  )}
+                </div>
               </div>
+
+              <h3 className="project-title">{project.title}</h3>
+
+              <div className="project-desc">
+                <p>{project.description}</p>
+              </div>
+
+              <ul className="project-tech-list">
+                {project.tech.map((tech, i) => (
+                  <li key={i}>{tech}</li>
+                ))}
+              </ul>
             </div>
           ))}
+        </div>
+
+        {/* "See More" Button at the bottom instead of a card */}
+        <div className="show-more-container">
+          <a
+            href="https://github.com/Smeeks01only"
+            className="btn primary"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View Full Project Archive
+          </a>
         </div>
       </div>
     </section>

@@ -1,184 +1,194 @@
+:root {
+  --primary-color: #64ffda; /* Teal */
+  --bg-dark: #0a192f; /* Navy */
+  --bg-light: #112240; /* Lighter Navy for cards */
+  --text-light: #ccd6f6; /* White-ish */
+  --text-dim: #8892b0; /* Grey-ish */
+}
+
 .about {
-  background: linear-gradient(to bottom right, #f7f9fc, #e3e8f0);
-  padding: 80px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: var(--bg-dark);
+  padding: 100px 20px;
+  color: var(--text-light);
+  overflow: hidden;
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1000px; /* Tighter width for better readability */
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
+  margin: 0 auto;
 }
 
-.about-header {
-  text-align: center;
+.about-grid {
+  display: grid;
+  grid-template-columns: 3fr 7fr; /* Image takes 30%, Text 70% */
+  gap: 50px;
+  align-items: flex-start; /* Align top */
+}
+
+/*Header Styling*/
+.section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
 .section-title {
-  font-size: 2.8rem;
+  font-size: 2rem;
   font-weight: 700;
-  color: #111;
-  margin-bottom: 10px;
-  letter-spacing: -0.5px;
-}
-
-.section-subtitle {
-  font-size: 1.1rem;
-  color: #555;
-}
-
-.about-content {
+  color: var(--text-light);
   display: flex;
-  gap: 60px;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
 }
 
-.about-image {
-  flex: 1;
+.number {
+  color: var(--primary-color);
+  font-family: monospace;
+  font-size: 1.5rem;
+  margin-right: 10px;
+  font-weight: 400;
+}
+
+.line {
+  height: 1px;
+  background-color: #233554;
+  width: 300px; /* Horizontal line after title */
+  margin-left: 20px;
+  display: block;
+}
+
+/*Text Styling*/
+.bio-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-dim);
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+/*Highlights/Interests Grid*/
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.highlight-card {
+  background-color: var(--bg-light);
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: transform 0.3s ease, border 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.highlight-card:hover {
+  transform: translateY(-5px);
+  border: 1px solid var(--primary-color);
+}
+
+.h-icon {
+  font-size: 1.5rem;
+}
+
+.h-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.h-label {
+  font-weight: 700;
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.h-desc {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+
+/*Image Styling (The "Picture Frame" Effect)*/
+.about-image-wrapper {
+  position: relative;
   max-width: 300px;
-  text-align: center;
+  /* Center horizontally on mobile */
+  margin: 0;
+}
+
+.image-frame {
+  position: relative;
+  z-index: 1;
+  /* CRITICAL FIX: This removes the invisible gap at the bottom */
+  line-height: 0;
+  /* CRITICAL FIX: Ensures the div shrinks to wrap the image */
+  display: inline-block;
+  width: 100%;
 }
 
 .profile-image {
   width: 100%;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  border-radius: 16px;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+  height: auto;
+  border-radius: 4px;
+  /* CRITICAL FIX: Removes inline spacing */
+  display: block;
 
-.profile-image:hover {
-  transform: scale(1.04);
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
-}
-
-.about-text {
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-
-.about-text p {
-  font-size: 1.05rem;
-  line-height: 1.8;
-  color: #333;
-  margin: 0;
-}
-.about-interests {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 10px;
-  justify-content: flex-start;
-}
-
-.interest {
-  padding: 16px 20px;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 14px;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 100px;
-  flex: 1 1 120px;
-  transition: all 0.3s ease;
+  filter: grayscale(100%) contrast(1.1);
+  transition: filter 0.3s ease;
   position: relative;
-  background: transparent;
-  cursor: default;
+  z-index: 2;
 }
 
-.interest::before {
-  content: "";
+/* The image becomes colored on hover */
+.image-frame:hover .profile-image {
+  filter: none;
+}
+
+/* The Teal Border behind the image */
+.frame-outline {
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--primary-color);
+  border-radius: 4px;
+
   position: absolute;
-  inset: 0;
-  border-radius: 14px;
-  background: linear-gradient(
-    to bottom right,
-    rgba(255, 255, 255, 0.1),
-    rgba(0, 0, 0, 0.05)
-  );
-  z-index: -1;
-  transition: opacity 0.3s ease;
-  opacity: 0;
+  z-index: 0;
+
+  /* This controls the "Offset" distance. */
+  top: 0px;
+  left: 0px;
+
+  transition: all 0.3s ease;
 }
 
-.interest:hover::before {
-  opacity: 1;
+/* On hover, the border snaps closer to the image */
+.image-frame:hover .frame-outline {
+  top: 0px;
+  left: 0px;
 }
 
-.interest:hover {
-  transform: translateY(-4px) scale(1.02);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
-  border-color: rgba(0, 0, 0, 0.15);
-}
-
-.interest-icon {
-  font-size: 1.9rem;
-  margin-bottom: 6px;
-}
-
-.interest-label {
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: #222;
-  text-align: center;
-}
-
-.about-footer {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.quote {
-  font-style: italic;
-  color: #666;
-  font-size: 1.05rem;
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.7;
-  position: relative;
-}
-
-.quote::before,
-.quote::after {
-  content: '"';
-  color: #00aaff;
-  font-size: 1.5rem;
-  font-weight: bold;
-  position: relative;
-  top: -3px;
-}
-
-@media (max-width: 768px) {
-  .about-content {
-    flex-direction: column;
+/*Responsive Design*/
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr; /* Stack Vertically */
   }
 
-  .about-text {
-    text-align: center;
-    align-items: center;
+  .about-image-wrapper {
+    margin-bottom: 50px; /* Space between image and text */
+    width: 70%;
   }
 
-  .section-title {
-    font-size: 2.2rem;
+  .line {
+    width: 100px; /* Shorter line on mobile */
   }
 
-  .section-subtitle {
-    font-size: 1rem;
-  }
-
-  .quote::before,
-  .quote::after {
-    font-size: 1.2rem;
+  .highlights-grid {
+    grid-template-columns: 1fr; /* 1 column for cards on small phones */
   }
 }

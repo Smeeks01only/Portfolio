@@ -1,20 +1,29 @@
+:root {
+  --primary-color: #64ffda;
+  --bg-dark: #0a192f;
+  --text-light: #ccd6f6;
+  --glass-bg: rgba(10, 25, 47, 0.85);
+}
+
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 0;
+  height: 80px; /* Fixed height for stability */
+  display: flex;
+  align-items: center;
   z-index: 1000;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
   background-color: transparent;
-  -webkit-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);
 }
 
 .navbar.scrolled {
-  background-color: rgba(0, 0, 0, 0.75);
-  padding: 15px 0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: var(--glass-bg);
+  height: 70px; /* Shrink slightly on scroll */
+  box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .navbar-container {
@@ -22,132 +31,151 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0; /* Remove any padding */
-  margin: 0; /* Ensure no margin offsets */
+  max-width: 1200px; /* CRITICAL: Matches Hero width */
+  margin: 0 auto; /* Centers the container */
+  padding: 0; /* Matches Hero padding */
 }
 
+/*Logo*/
 .logo {
-  font-size: 1.75rem;
-  font-weight: bold;
-  color: var(--light-text);
-  text-decoration: none;
-  padding-left: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .logo-img {
-  width: 44.5px; /* adjust as needed */
+  width: 45px;
   height: auto;
-  filter: invert(1);
+  /* Only keep this if your logo image is actually black */
+  filter: invert(1) brightness(2);
+  transition: transform 0.3s ease;
 }
 
+.logo:hover .logo-img {
+  transform: rotate(10deg);
+}
+
+/*Menu Items*/
 .nav-menu {
   display: flex;
   align-items: center;
   list-style: none;
-  padding-right: 20px; /* Optional: add space from right edge */
+  gap: 2rem; /* Better spacing than margin-left */
 }
 
-.nav-menu li {
-  margin-left: 25px;
-}
-
-.nav-menu a {
-  display: grid;
-  grid-template-columns: auto 1fr;
+.nav-link {
+  display: flex; /* Changed grid to flex for better alignment */
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   text-decoration: none;
-  color: var(--light-text);
+  color: var(--text-light);
   font-weight: 500;
-  font-size: 1rem;
-  padding: 10px 16px;
-  border-radius: 10px;
+  font-size: 0.95rem; /* Slightly smaller = more premium */
+  transition: color 0.3s ease;
+}
+
+/* Hover Effect: Numbering style or Color change */
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+.nav-link .icon {
+  display: none; /* Hide icons on Desktop for cleaner look */
+}
+
+/*Resume Button*/
+.resume-btn {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
   transition: all 0.3s ease;
-  background-color: transparent;
-}
-
-.nav-menu a:hover {
-  /* background-color: rgba(255, 255, 255, 0.1); */
-  color: rgba(255, 255, 255, 0.5);
-  transform: translateY(-1px);
-}
-
-.nav-menu .icon {
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 5px;
 }
 
-.nav-menu .label {
-  font-size: 1rem;
-  letter-spacing: 0.4px;
+.resume-btn:hover {
+  background-color: rgba(100, 255, 218, 0.1);
 }
 
+.resume-btn .icon {
+  display: none;
+}
+
+/*Mobile Toggle*/
 .menu-toggle {
   display: none;
   flex-direction: column;
   cursor: pointer;
+  gap: 6px;
 }
 
 .menu-toggle span {
   display: block;
-  width: 26px;
-  height: 3px;
-  background-color: var(--light-text);
-  margin: 5px 0;
+  width: 25px;
+  height: 2px; /* Thinner lines look cleaner */
+  background-color: var(--primary-color);
   transition: all 0.3s ease;
 }
 
-/* Hamburger icon animation */
-.menu-toggle.active span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 6px);
-}
-.menu-toggle.active span:nth-child(2) {
-  opacity: 0;
-}
-.menu-toggle.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -6px);
-}
-
-/* Mobile styles */
+/*Responsive / Mobile*/
 @media (max-width: 768px) {
   .menu-toggle {
     display: flex;
+    z-index: 1001; /* Ensure it sits above the menu */
+  }
+
+  /* Hamburger Animation */
+  .menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+  }
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
   }
 
   .nav-menu {
     position: fixed;
-    top: 70px;
-    left: -100%;
+    top: 0;
+    right: 0; /* Come from right side is standard for mobile */
+    width: 75%; /* Don't cover full screen, let them see underlying page dim */
+    height: 100vh;
+    background-color: #112240; /* Slightly lighter than bg-dark */
     flex-direction: column;
-    width: 100%;
-    height: calc(100vh - 70px);
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 40px 20px;
-    transition: all 0.3s ease;
-    opacity: 0;
+    justify-content: center;
+    padding-top: 0;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: -10px 0px 30px -15px rgba(2, 12, 27, 0.7);
   }
 
   .nav-menu.active {
-    left: 0;
-    opacity: 1;
+    transform: translateX(0);
   }
 
-  .nav-menu li {
-    margin: 20px 0;
-    text-align: center;
+  .nav-link {
+    font-size: 1.2rem;
+    flex-direction: row;
+    padding: 1rem;
   }
 
-  .nav-menu a {
-    grid-template-columns: 1fr;
-    gap: 6px;
+  /* Show icons on mobile for visual cues */
+  .nav-link .icon,
+  .resume-btn .icon {
+    display: flex;
+    color: var(--primary-color);
+  }
+
+  .resume-item {
+    margin-top: 20px;
+  }
+
+  .resume-btn {
+    padding: 10px 30px;
     font-size: 1.1rem;
-    flex-direction: column;
-    padding: 12px;
-  }
-
-  .nav-menu .icon {
-    margin: 0;
-    font-size: 1.5rem;
   }
 }
