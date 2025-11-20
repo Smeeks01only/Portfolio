@@ -55,7 +55,7 @@ body {
 
 section {
   /* Reduced from 100px to 80px for better flow */
-  padding: px 0;
+  padding: 0 20px;
   width: 100%;
 }
 
@@ -143,7 +143,7 @@ a {
 }
 
 /* 8. Mobile Adjustments */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   section {
     padding: 60px 0; /* Even tighter on mobile to save screen space */
   }
