@@ -1,5 +1,4 @@
 import React from "react";
-import "./Skills.css";
 
 function Skills() {
   const skills = [
@@ -38,24 +37,24 @@ function Skills() {
   ];
 
   return (
-    <section id="skills" className="skills">
-      <div className="container">
-        <div className="section-header">
-          <h2 className="section-title">
-            <span className="number">02.</span> Skills
+    <section id="skills" className="py-[100px] bg-bg-dark font-sans">
+      <div className="w-full max-w-[1200px] mx-auto px-6">
+        <div className="flex items-center mb-10">
+          <h2 className="text-[clamp(1.5rem,5vw,2rem)] font-bold text-text-light flex items-center">
+            <span className="text-primary-color font-mono text-xl mr-2 font-normal">02.</span> Skills
           </h2>
-          <div className="line"></div>
+          <div className="h-[1px] bg-[#233554] w-[300px] ml-5 block md:w-[200px] sm:w-[100px]"></div>
         </div>
 
-        <div className="skills-grid">
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-6 mt-12">
           {skills.map((skillGroup, index) => (
-            <div className="skill-card" key={index}>
-              <div className="card-header">
-                <h3>{skillGroup.category}</h3>
+            <div className="bg-bg-light p-8 rounded-lg transition-all duration-300 border border-transparent hover:-translate-y-1 hover:border-primary-color hover:shadow-[0_10px_30px_-15px_rgba(2,12,27,0.7)] group" key={index}>
+              <div className="mb-6">
+                <h3 className="text-text-light text-[1.3rem] flex items-center before:content-['▹'] before:text-primary-color before:mr-2 before:text-[1.2rem]">{skillGroup.category}</h3>
               </div>
-              <div className="skill-tags">
+              <div className="flex flex-wrap gap-3">
                 {skillGroup.items.map((skill, i) => (
-                  <span className="skill-tag" key={i}>
+                  <span className="font-mono text-[0.9rem] text-text-dim bg-primary-color/5 px-4 py-2 rounded-full transition-all duration-200 group-hover:text-primary-color group-hover:bg-primary-color/10" key={i}>
                     {skill}
                   </span>
                 ))}

@@ -5,10 +5,9 @@ import Hero from "./components/hero/Hero";
 import About from "./components/about/About";
 import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/Projects";
-/*import Contact from "./components/contact/Contact";*/
+import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import { Analytics } from "@vercel/analytics/react";
-import "./App.css";
 
 function App() {
   return (
@@ -18,7 +17,7 @@ function App() {
       <About />
       <Skills />
       <Projects />
-      {/*<Contact />*/}
+      <Contact />
       <Footer />
       <Analytics />
     </div>
