@@ -8,8 +8,15 @@ import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import { Analytics } from "@vercel/analytics/react";
+import { useEffect } from "react";
+import { initGA, trackPageView } from "./utils/analytics";
 
 function App() {
+  useEffect(() => {
+    initGA();
+    trackPageView(window.location.pathname);
+  }, []);
+
   return (
     <div className="App">
       <Navbar />
