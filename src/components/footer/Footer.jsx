@@ -5,7 +5,7 @@ import XIcon from "@mui/icons-material/X";
 
 function Footer() {
   return (
-    <footer className="bg-bg-dark py-10 text-center flex flex-col items-center gap-5 font-sans">
+    <footer className="bg-bg-light py-10 text-center flex flex-col items-center gap-5 font-sans border-t border-gray-100">
       <div className="flex gap-6 mb-2.5">
         <a
           href="https://github.com/Smeeks01only"
@@ -37,7 +37,7 @@ function Footer() {
         >
           Designed & Built by Tinashe B Dzikiti
         </a>
-        <p className="text-[#54607a] text-[0.8rem]">
+        <p className="text-gray-400 text-[0.8rem]">
           &copy; {new Date().getFullYear()} Harare, Zimbabwe
         </p>
       </div>

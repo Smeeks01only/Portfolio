@@ -41,18 +41,18 @@ function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-[100px] bg-bg-dark font-sans">
+    <section id="projects" className="py-[100px] bg-bg-light font-sans">
       <div className="w-full max-w-[1200px] mx-auto px-6">
         <div className="flex items-center mb-10">
-          <h2 className="text-[clamp(1.5rem,5vw,2rem)] font-bold text-text-light flex items-center">
+          <h2 className="text-[clamp(1.5rem,5vw,2rem)] font-bold text-text-light flex items-center whitespace-nowrap">
             <span className="text-primary-color font-mono text-xl mr-2 font-normal">03.</span> Projects
           </h2>
-          <div className="h-[1px] bg-[#233554] w-[300px] ml-5 block md:w-[200px] sm:w-[100px]"></div>
+          <div className="h-[1px] bg-gray-200 w-[300px] ml-5 block md:w-[200px] sm:w-[100px]"></div>
         </div>
 
-        <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4 mt-12">
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-5 mt-12">
           {projects.map((project, index) => (
-            <div className="bg-bg-light p-8 rounded-lg transition-all duration-[250ms] flex flex-col h-full border border-transparent hover:-translate-y-2 hover:border-primary-color hover:shadow-[0_10px_30px_-15px_rgba(2,12,27,0.7)] group" key={index}>
+            <div className="bg-white p-8 rounded-xl transition-all duration-[250ms] flex flex-col h-full border border-gray-100 hover:-translate-y-2 hover:border-primary-color hover:shadow-[0_8px_30px_rgba(37,99,235,0.08)] group" key={index}>
               <div className="flex justify-between items-center mb-8">
                 <div className="text-primary-color">
                   <FolderOpenIcon fontSize="large" />
@@ -62,7 +62,7 @@ function Projects() {
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-text-light ml-2.5 transition-colors duration-200 hover:text-primary-color"
+                    className="text-text-dim ml-2.5 transition-colors duration-200 hover:text-primary-color"
                   >
                     <GitHubIcon />
                   </a>
@@ -71,7 +71,7 @@ function Projects() {
                       href={project.liveLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-text-light ml-2.5 transition-colors duration-200 hover:text-primary-color"
+                      className="text-text-dim ml-2.5 transition-colors duration-200 hover:text-primary-color"
                     >
                       <LaunchIcon />
                     </a>
@@ -87,7 +87,7 @@ function Projects() {
 
               <ul className="flex flex-wrap list-none p-0 mt-5 gap-4">
                 {project.tech.map((tech, i) => (
-                  <li className="font-mono text-[0.85rem] text-text-dim" key={i}>{tech}</li>
+                  <li className="font-mono text-[0.85rem] text-text-dim bg-primary-color/5 px-3 py-1 rounded-full" key={i}>{tech}</li>
                 ))}
               </ul>
             </div>
@@ -98,7 +98,7 @@ function Projects() {
         <div className="mt-20 flex justify-center">
           <a
             href="https://github.com/Smeeks01only"
-            className="px-6 py-3 rounded text-primary-color border border-primary-color text-sm transition-all duration-300 hover:bg-primary-color/10 hover:-translate-y-1 no-underline font-mono"
+            className="px-6 py-3 rounded-lg text-primary-color border border-primary-color text-sm transition-all duration-300 hover:bg-primary-color hover:text-white hover:-translate-y-1 no-underline font-medium"
             target="_blank"
             rel="noreferrer"
           >

@@ -7,13 +7,13 @@ export default {
     theme: {
         extend: {
             colors: {
-                'bg-dark': '#0a192f',
-                'bg-light': '#112240',
-                'bg-shadow': '#020c1b',
-                'primary-color': '#64ffda',
-                'secondary-color': '#172a45',
-                'text-light': '#e6f1ff',
-                'text-dim': '#8892b0',
+                'bg-dark': '#FFFFFF',
+                'bg-light': '#F8F9FA',
+                'bg-shadow': '#F1F3F5',
+                'primary-color': '#2563EB',
+                'secondary-color': '#E8EDFB',
+                'text-light': '#111827',
+                'text-dim': '#6B7280',
             },
             fontFamily: {
                 sans: ['Inter', 'Calibre', 'San Francisco', '-apple-system', 'sans-serif'],

@@ -28,19 +28,19 @@
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-bg-dark;
+  background: #F8F9FA;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #495670;
+  background-color: #D1D5DB;
   border-radius: 10px;
-  border: 2px solid theme('colors.bg-dark');
+  border: 2px solid #F8F9FA;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-secondary-color;
+  background-color: #9CA3AF;
 }
