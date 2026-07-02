@@ -18,13 +18,12 @@ function Hero() {
             </h1>
 
             <h2 className="text-[2rem] font-semibold text-text-dim mb-6 [animation-delay:0.2s] opacity-0 translate-y-[30px] animate-fadeIn">
-              <span className="text-primary-color">Full-Stack Developer</span> (React &
-              Python)
+              <span className="text-primary-color">Software Engineer</span>, AI Engineer & Web Developer
             </h2>
 
             <p className="text-[1.1rem] text-text-dim mb-10 leading-relaxed max-w-[480px] [animation-delay:0.3s] opacity-0 translate-y-[30px] animate-fadeIn">
-              I build accessible, pixel-perfect web applications for global
-              clients. Based in Harare, shipping code worldwide.
+              I build intelligent, scalable software from AI-powered systems, pixel-perfect web applications to enterprise applications. 
+              Based in Harare, shipping code worldwide.
             </p>
 
             <div className="flex gap-4 [animation-delay:0.4s] opacity-0 translate-y-[30px] animate-fadeIn">
@@ -39,17 +38,19 @@ function Hero() {
             <div className="mt-12 border-t border-gray-100 pt-6 flex items-center gap-2 text-text-dim text-sm max-[900px]:flex-col max-[900px]:gap-2 [animation-delay:0.5s] opacity-0 translate-y-[30px] animate-fadeIn">
               <p className="mb-0 mt-0">Tech Stack:</p>
               <div className="flex items-center gap-2.5 flex-wrap max-[900px]:justify-center">
-                <span className="font-mono text-text-light">React</span>
-                <span className="text-gray-300">•</span>
                 <span className="font-mono text-text-light">Python</span>
                 <span className="text-gray-300">•</span>
-                <span className="font-mono text-text-light">SQL</span>
+                <span className="font-mono text-text-light">React</span>
                 <span className="text-gray-300">•</span>
-                <span className="font-mono text-text-light">JavaScript</span>
+                <span className="font-mono text-text-light">TensorFlow</span>
                 <span className="text-gray-300">•</span>
                 <span className="font-mono text-text-light">Java</span>
                 <span className="text-gray-300">•</span>
                 <span className="font-mono text-text-light">Django</span>
+                <span className="text-gray-300">•</span>
+                <span className="font-mono text-text-light">JavaScript</span>
+                <span className="text-gray-300">•</span>
+                <span className="font-mono text-text-light">SQL</span>
               </div>
             </div>
           </div>

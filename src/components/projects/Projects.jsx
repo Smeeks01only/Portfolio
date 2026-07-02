@@ -52,17 +52,24 @@ function Projects() {
 
         <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-5 mt-12">
           {projects.map((project, index) => (
-            <div className="bg-white p-8 rounded-xl transition-all duration-[250ms] flex flex-col h-full border border-gray-100 hover:-translate-y-2 hover:border-primary-color hover:shadow-[0_8px_30px_rgba(37,99,235,0.08)] group" key={index}>
+            <a
+              href={project.liveLink !== "#" ? project.liveLink : project.githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white p-8 rounded-xl transition-all duration-[250ms] flex flex-col h-full border border-gray-100 hover:-translate-y-2 hover:border-primary-color hover:shadow-[0_8px_30px_rgba(37,99,235,0.08)] group no-underline cursor-pointer"
+              key={index}
+            >
               <div className="flex justify-between items-center mb-8">
                 <div className="text-primary-color">
                   <FolderOpenIcon fontSize="large" />
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-center" onClick={(e) => e.stopPropagation()}>
                   <a
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-text-dim ml-2.5 transition-colors duration-200 hover:text-primary-color"
+                    onClick={(e) => e.stopPropagation()}
                   >
                     <GitHubIcon />
                   </a>
@@ -72,6 +79,7 @@ function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-text-dim ml-2.5 transition-colors duration-200 hover:text-primary-color"
+                      onClick={(e) => e.stopPropagation()}
                     >
                       <LaunchIcon />
                     </a>
@@ -90,7 +98,7 @@ function Projects() {
                   <li className="font-mono text-[0.85rem] text-text-dim bg-primary-color/5 px-3 py-1 rounded-full" key={i}>{tech}</li>
                 ))}
               </ul>
-            </div>
+            </a>
           ))}
         </div>
 

@@ -1,14 +1,14 @@
 import React from "react";
 import My_Picture from "../../assets/images/My_Picture.png";
-import RocketLaunchOutlinedIcon from "@mui/icons-material/RocketLaunchOutlined";
-import EditNoteOutlinedIcon from "@mui/icons-material/EditNoteOutlined";
+import SmartToyOutlinedIcon from "@mui/icons-material/SmartToyOutlined";
+import CodeOutlinedIcon from "@mui/icons-material/CodeOutlined";
 import ExtensionOutlinedIcon from "@mui/icons-material/ExtensionOutlined";
 import PublicOutlinedIcon from "@mui/icons-material/PublicOutlined";
 
 function About() {
   const highlights = [
-    { icon: <RocketLaunchOutlinedIcon />, label: "Fast Learner", desc: "Adapting to new tech" },
-    { icon: <EditNoteOutlinedIcon />, label: "Tech Writer", desc: "Documentation & Poetry" },
+    { icon: <SmartToyOutlinedIcon />, label: "AI & ML", desc: "Intelligent systems" },
+    { icon: <CodeOutlinedIcon />, label: "Software Engineering", desc: "Scalable architecture" },
     { icon: <ExtensionOutlinedIcon />, label: "Problem Solver", desc: "Logic & Creativity" },
     { icon: <PublicOutlinedIcon />, label: "Remote Ready", desc: "Timezone Flexible" },
   ];
@@ -39,25 +39,26 @@ function About() {
           {/*Text Side*/}
           <div className="text-[1.1rem] leading-[1.7] text-text-dim mb-5">
             <p className="mb-5">
-              Hello! My name is Tinashe and I enjoy creating things that live on
-              the internet. My interest in software engineering started at the
-              <span className="text-primary-color font-medium"> University of Zimbabwe</span>, where
-              I discovered that coding is the perfect mix of logic and creative
-              expression.
+              Hello! My name is Tinashe, a software engineer, AI enthusiast and
+              web developer. My journey started back at highschool, with a curious mind
+              that gravitated towards building systems that solve real-world problems and systems that brought enjoyment to people
+              through code.
             </p>
 
             <p className="mb-5">
-              I enjoy turning ideas into real products—whether that's developing
-              <span className="text-primary-color font-medium"> AI-powered solutions </span>
-              or crafting smooth, responsive interfaces in React. My work
-              focuses on clean architecture, efficiency, and user-centered
-              design.
+              I work at the intersection of
+              <span className="text-primary-color font-medium"> artificial intelligence </span>
+              and
+              <span className="text-primary-color font-medium"> software engineering</span>,
+              building everything from machine learning models and intelligent
+              chatbots to full-stack web applications with clean, scalable
+              architecture.
             </p>
 
             <p className="mb-5">
-              When I'm not at my terminal, I'm likely writing poetry, watching
-              Formula 1, or taking nature walks to reset my mind for the next
-              debugging session.
+              When I'm not training models or shipping features, I'm likely
+              journaling, watching Formula 1, playing football, playing video game or taking nature walks to
+              recharge.
             </p>
 
             {/* 2. The "Soft Skills" Grid */}
