@@ -5,7 +5,40 @@ import LaunchIcon from "@mui/icons-material/Launch";
 
 function Projects() {
   const projects = [
+     {
+      title: "Job Tracker",
+      description:
+        "A sleek, full-stack application that helps job seekers organize, track, and manage their applications and interviews all in one place.",
+      tech: ["React", "Tailwind CSS","Python", "Django", "PostgreSQL"],
+      githubLink: "https://github.com/Smeeks01only/JobTracker_AI",
+      liveLink: "https://job-tracker-ai-six.vercel.app", 
+    },
+     {
+      title: "Personal Finance Manager",
+      description:
+        "A comprehensive full-stack web application that helps users track expenses, manage budgets, and set financial goals. Features interactive data visualizations and secure JWT authentication.",
+      tech: ["React", "Django", "PostgreSQL", "Recharts"],
+      githubLink: "https://github.com/Smeeks01only/Personal-Finance-Manager",
+      liveLink: "https://personal-finance-manager-two-ivory.vercel.app",
+    },
+     {
+      title: "Currency Exchange Rates Web App ",
+      description:
+        "A frontend React application built with Vite that integrates with European Central Bank data to deliver accurate, daily-updated currency exchange rates and historical trends.",
+      tech: ["React", "Vite", "REST API", "Recharts"],
+      githubLink: "https://github.com/Smeeks01only/currency-exchange-rates",
+      liveLink: "https://currency-exchange-rates-tau.vercel.app", // Add live link if you have one
+    },
     {
+      title: "The Smeeks Bot",
+      description:
+        "A sleek, full-stack conversational AI agent with built-in memory. Features a responsive React UI and a Django backend powered by the lightning-fast Groq API.",
+      tech: ["React", "Django", "Groq API", "SQLite", "Vite"],
+      githubLink: "https://github.com/Smeeks01only/The-Smeeks-Bot",
+      liveLink: "#",
+    },
+
+     {
       title: "Campus Sports Blog",
       description:
         "A full-stack blog platform for university sports news. Built with a Django backend and a responsive template engine.",
@@ -14,30 +47,13 @@ function Projects() {
       liveLink: "#", // Add live link if you have one
     },
     {
-      title: "Instagram Clone",
+      title: "View More Projects",
       description:
-        "A functional replica of Instagram's core features including image uploads, likes, and user authentication.",
-      tech: ["React", "Firebase", "Tailwind"],
+        "To view more projects and my full archive of open-source contributions, click here.",
+      tech: [],
       githubLink: "https://github.com/Smeeks01only",
-      liveLink: "#",
+      liveLink: "https://github.com/Smeeks01only",
     },
-    {
-      title: "Tesla UI Clone",
-      description:
-        "Pixel-perfect recreation of the Tesla landing page, focusing on smooth animations and responsive layout.",
-      tech: ["React", "Framer Motion", "CSS"],
-      githubLink: "https://github.com/Smeeks01only",
-      liveLink: "#",
-    },
-    {
-      title: "AI ChatBot",
-      description:
-        "An intelligent conversational agent integrated with the OpenAI API to assist users with general queries.",
-      tech: ["React", "OpenAI API", "Node.js"],
-      githubLink: "https://github.com/Smeeks01only",
-      liveLink: "#",
-    },
-    // Tip: Add a project that solves a ZIMBABWEAN problem here if you can!
   ];
 
   return (
@@ -102,17 +118,6 @@ function Projects() {
           ))}
         </div>
 
-        {/* "See More" Button at the bottom instead of a card */}
-        <div className="mt-20 flex justify-center">
-          <a
-            href="https://github.com/Smeeks01only"
-            className="px-6 py-3 rounded-lg text-primary-color border border-primary-color text-sm transition-all duration-300 hover:bg-primary-color hover:text-white hover:-translate-y-1 no-underline font-medium"
-            target="_blank"
-            rel="noreferrer"
-          >
-            View Full Project Archive
-          </a>
-        </div>
       </div>
     </section>
   );
