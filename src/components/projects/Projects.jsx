@@ -35,7 +35,7 @@ function Projects() {
         "A sleek, full-stack conversational AI agent with built-in memory. Features a responsive React UI and a Django backend powered by the lightning-fast Groq API.",
       tech: ["React", "Django", "Groq API", "SQLite", "Vite"],
       githubLink: "https://github.com/Smeeks01only/The-Smeeks-Bot",
-      liveLink: "#",
+      liveLink: "https://the-smeeks-bot.pages.dev",
     },
 
      {
