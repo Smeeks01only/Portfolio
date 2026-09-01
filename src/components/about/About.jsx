@@ -1,5 +1,4 @@
 import React from "react";
-import My_Picture from "../../assets/images/My_Picture.png";
 import SmartToyOutlinedIcon from "@mui/icons-material/SmartToyOutlined";
 import CodeOutlinedIcon from "@mui/icons-material/CodeOutlined";
 import ExtensionOutlinedIcon from "@mui/icons-material/ExtensionOutlined";
@@ -15,29 +14,17 @@ function About() {
 
   return (
     <section id="about" className="py-[100px] px-6 bg-bg-light text-text-light overflow-hidden font-sans">
-      <div className="w-full max-w-[1000px] mx-auto">
+      <div className="w-full max-w-[1200px] mx-auto">
         <div className="flex items-center mb-10">
           <h2 className="text-[clamp(1.5rem,5vw,2rem)] font-bold text-text-light flex items-center whitespace-nowrap">
             <span className="text-primary-color font-mono text-xl mr-2 font-normal">01.</span> About Me
           </h2>
           <div className="h-[1px] bg-gray-200 w-[300px] ml-5 block md:w-[200px] sm:w-[100px]"></div>
         </div>
-        {/* 1. Split Layout: Text Left, Image Right (Standard Desktop Pattern) */}
-        <div className="grid grid-cols-[3fr_7fr] gap-12 items-start max-[900px]:grid-cols-1">
-          {/*Image Side*/}
-          <div className="relative max-w-[300px] mx-0 max-[900px]:mx-auto max-[900px]:mb-12 max-[900px]:w-[70%]">
-            <div className="absolute -inset-4 bg-gradient-to-br from-primary-color/10 to-blue-400/5 rounded-3xl blur-xl"></div>
-            <div className="relative group">
-              <img
-                src={My_Picture}
-                alt="Tinashe Dzikiti"
-                className="w-full h-auto rounded-2xl block transition-all duration-500 relative z-10 shadow-[0_8px_30px_rgba(0,0,0,0.08)] group-hover:shadow-[0_12px_40px_rgba(37,99,235,0.15)] group-hover:-translate-y-1"
-              />
-            </div>
-          </div>
-
+        {/* 1. Single Column Layout */}
+        <div className="flex flex-col gap-8 items-start">
           {/*Text Side*/}
-          <div className="text-[1.1rem] leading-[1.7] text-text-dim mb-5">
+          <div className="text-[1.1rem] leading-[1.7] text-text-dim mb-5 w-full">
             <p className="mb-5">
               Hello! My name is Tinashe, a software engineer, AI enthusiast and
               web developer. My journey started back at highschool, with a curious mind

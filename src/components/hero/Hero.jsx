@@ -1,5 +1,5 @@
 import React from "react";
-import Hero_Image from "../../assets/images/programmer_office.png";
+import Hero_Image from "../../assets/images/Hello World!.svg";
 
 function Hero() {
   return (
@@ -60,7 +60,7 @@ function Hero() {
             <img
               src={Hero_Image}
               alt="Tinashe Dzikiti - Software Engineer"
-              className="w-full rounded-[20px] relative z-10 shadow-[0_20px_50px_rgba(0,0,0,0.08)] animate-float"
+              className="w-full relative z-10 animate-float"
             />
           </div>
         </div>
