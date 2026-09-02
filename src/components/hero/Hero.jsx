@@ -3,12 +3,12 @@ import Hero_Image from "../../assets/images/Hello World!.svg";
 
 function Hero() {
   return (
-    <section id="home" className="min-h-screen bg-white py-[100px] flex items-center overflow-hidden font-sans">
+    <section id="home" className="min-h-screen bg-bg-dark py-[100px] flex items-center overflow-hidden font-sans">
       <div className="w-full max-w-[1200px] mx-auto px-6">
         {/* Added hero-grid to match about-grid structure */}
-        <div className="flex items-center justify-between gap-8 w-full max-[900px]:flex-col-reverse max-[900px]:text-center max-[900px]:pt-20">
+        <div className="flex items-center justify-between gap-8 w-full max-[900px]:flex-col max-[900px]:text-center max-[900px]:pt-0">
           <div className="flex-1 max-w-[600px] opacity-0 translate-y-[30px] animate-fadeIn max-[900px]:flex max-[900px]:flex-col max-[900px]:items-center">
-            <div className="inline-flex items-center gap-2 bg-primary-color/10 text-primary-color px-3 py-1.5 rounded-full text-sm font-medium mb-6 border border-primary-color/20 [animation-delay:0.1s]">
+            <div className="inline-flex items-center gap-2 bg-primary-color/10 text-primary-color px-3 py-1.5 rounded-full text-sm font-medium mb-6 border border-primary-color/20 [animation-delay:0.1s] max-[900px]:hidden">
               <span className="w-2 h-2 bg-primary-color rounded-full shadow-[0_0_10px_theme('colors.primary-color')] animate-pulse"></span>
               Available for Work
             </div>
@@ -30,12 +30,12 @@ function Hero() {
               <a href="#projects" className="px-8 py-4 rounded-lg font-semibold text-base transition-all duration-300 bg-primary-color text-white hover:bg-blue-700 hover:-translate-y-0.5 hover:shadow-lg no-underline">
                 View My Work
               </a>
-              <a href="#contact" className="px-8 py-4 rounded-lg font-semibold text-base transition-all duration-300 text-text-dim border border-gray-200 hover:border-primary-color hover:text-primary-color no-underline">
+              <a href="#contact" className="px-8 py-4 rounded-lg font-semibold text-base transition-all duration-300 text-text-dim border border-gray-200 dark:border-gray-700 hover:border-primary-color hover:text-primary-color no-underline">
                 Contact Me
               </a>
             </div>
 
-            <div className="mt-12 border-t border-gray-100 pt-6 flex items-center gap-2 text-text-dim text-sm max-[900px]:flex-col max-[900px]:gap-2 [animation-delay:0.5s] opacity-0 translate-y-[30px] animate-fadeIn">
+            <div className="mt-12 border-t border-gray-100 dark:border-gray-800 pt-6 flex items-center gap-2 text-text-dim text-sm max-[900px]:flex-col max-[900px]:gap-2 [animation-delay:0.5s] opacity-0 translate-y-[30px] animate-fadeIn">
               <p className="mb-0 mt-0">Tech Stack:</p>
               <div className="flex items-center gap-2.5 flex-wrap max-[900px]:justify-center">
                 <span className="font-mono text-text-light">Python</span>

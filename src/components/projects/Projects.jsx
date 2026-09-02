@@ -72,7 +72,7 @@ function Projects() {
               href={project.liveLink !== "#" ? project.liveLink : project.githubLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white p-8 rounded-xl transition-all duration-[250ms] flex flex-col h-full border border-gray-100 hover:-translate-y-2 hover:border-primary-color hover:shadow-[0_8px_30px_rgba(37,99,235,0.08)] group no-underline cursor-pointer"
+              className="bg-bg-dark p-8 rounded-xl transition-all duration-[250ms] flex flex-col h-full border border-gray-100 dark:border-gray-800 hover:-translate-y-2 hover:border-primary-color hover:shadow-[0_8px_30px_rgba(37,99,235,0.08)] group no-underline cursor-pointer"
               key={index}
             >
               <div className="flex justify-between items-center mb-8">

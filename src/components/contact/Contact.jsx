@@ -99,7 +99,7 @@ function Contact() {
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="bg-white rounded-2xl p-8 md:p-10 shadow-[0_4px_24px_rgba(0,0,0,0.04)] border border-gray-100"
+          className="bg-bg-dark rounded-2xl p-8 md:p-10 shadow-[0_4px_24px_rgba(0,0,0,0.04)] border border-gray-100 dark:border-gray-800"
           noValidate
         >
           {/* Hidden field for EmailJS Reply-To header */}
@@ -125,7 +125,7 @@ function Contact() {
                 onChange={handleChange}
                 placeholder="Your name"
                 className={`w-full pl-11 pr-4 py-3 rounded-lg border bg-bg-light text-text-light text-[0.95rem] font-sans placeholder:text-gray-400 outline-none transition-all duration-200 focus:border-primary-color focus:ring-2 focus:ring-primary-color/20 ${
-                  errors.from_name ? "border-red-400" : "border-gray-200"
+                  errors.from_name ? "border-red-400" : "border-gray-200 dark:border-gray-700"
                 }`}
               />
             </div>
@@ -157,7 +157,7 @@ function Contact() {
                 onChange={handleChange}
                 placeholder="your@email.com"
                 className={`w-full pl-11 pr-4 py-3 rounded-lg border bg-bg-light text-text-light text-[0.95rem] font-sans placeholder:text-gray-400 outline-none transition-all duration-200 focus:border-primary-color focus:ring-2 focus:ring-primary-color/20 ${
-                  errors.from_email ? "border-red-400" : "border-gray-200"
+                  errors.from_email ? "border-red-400" : "border-gray-200 dark:border-gray-700"
                 }`}
               />
             </div>
@@ -189,7 +189,7 @@ function Contact() {
                 placeholder="Hi Tinashe, I'd like to talk about..."
                 rows={5}
                 className={`w-full pl-11 pr-4 py-3 rounded-lg border bg-bg-light text-text-light text-[0.95rem] font-sans placeholder:text-gray-400 outline-none transition-all duration-200 resize-none focus:border-primary-color focus:ring-2 focus:ring-primary-color/20 ${
-                  errors.message ? "border-red-400" : "border-gray-200"
+                  errors.message ? "border-red-400" : "border-gray-200 dark:border-gray-700"
                 }`}
               />
             </div>

@@ -51,7 +51,7 @@ function About() {
             {/* 2. The "Soft Skills" Grid */}
             <div className="grid grid-cols-2 gap-4 mt-8 max-[900px]:grid-cols-1">
               {highlights.map((item, i) => (
-                <div className="bg-white p-4 rounded-lg flex items-center gap-4 transition-all duration-300 border border-gray-100 hover:-translate-y-1 hover:border-primary-color hover:shadow-[0_4px_20px_rgba(37,99,235,0.08)]" key={i}>
+                <div className="bg-bg-dark p-4 rounded-lg flex items-center gap-4 transition-all duration-300 border border-gray-100 dark:border-gray-800 hover:-translate-y-1 hover:border-primary-color hover:shadow-[0_4px_20px_rgba(37,99,235,0.08)]" key={i}>
                   <span className="text-primary-color text-[1.5rem] flex items-center">{item.icon}</span>
                   <div className="flex flex-col">
                     <span className="font-semibold text-text-light text-[0.9rem]">{item.label}</span>

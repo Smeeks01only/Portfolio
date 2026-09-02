@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+    darkMode: 'class',
     content: [
         "./index.html",
         "./src/**/*.{js,ts,jsx,tsx}",
@@ -7,13 +8,13 @@ export default {
     theme: {
         extend: {
             colors: {
-                'bg-dark': '#FFFFFF',
-                'bg-light': '#F8F9FA',
-                'bg-shadow': '#F1F3F5',
-                'primary-color': '#2563EB',
-                'secondary-color': '#E8EDFB',
-                'text-light': '#111827',
-                'text-dim': '#6B7280',
+                'bg-dark': 'var(--bg-dark)',
+                'bg-light': 'var(--bg-light)',
+                'bg-shadow': 'var(--bg-shadow)',
+                'primary-color': 'var(--primary-color)',
+                'secondary-color': 'var(--secondary-color)',
+                'text-light': 'var(--text-light)',
+                'text-dim': 'var(--text-dim)',
             },
             fontFamily: {
                 sans: ['Inter', 'Calibre', 'San Francisco', '-apple-system', 'sans-serif'],

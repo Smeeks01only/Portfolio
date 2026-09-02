@@ -6,6 +6,9 @@ import WorkOutlineOutlinedIcon from "@mui/icons-material/WorkOutlineOutlined";
 import ContactMailOutlinedIcon from "@mui/icons-material/ContactMailOutlined";
 import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
 import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
+import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
+import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
+import { useTheme } from "../../hooks/useTheme";
 
 import Smeeks from "../../assets/images/Smeeks_Logo.png";
 
@@ -13,6 +16,7 @@ function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
+  const { isDarkMode, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -89,46 +93,28 @@ function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 w-full h-[80px] flex items-center z-[1000] transition-all duration-300 bg-transparent ${scrolled
-          ? "bg-white/90 h-[70px] shadow-[0_1px_0_rgba(0,0,0,0.06)] backdrop-blur-md"
+          ? "bg-white/90 dark:bg-[#0f172a]/90 h-[70px] shadow-[0_1px_0_rgba(0,0,0,0.06)] backdrop-blur-md"
           : ""
         }`}
     >
       <div className="flex justify-between items-center w-full max-w-[1200px] mx-auto px-6">
-        <a href="#home" className="flex items-center group">
+        <a href="#home" className="flex items-center group z-[1001]">
           <img
             src={Smeeks}
             alt="Smeeks Logo"
-            className="w-[40px] h-auto transition-transform duration-300 group-hover:rotate-[10deg]"
+            className="w-[40px] h-auto transition-transform duration-300 group-hover:rotate-[10deg] dark:invert dark:opacity-90"
           />
         </a>
 
-        {/* Mobile Toggle */}
-        <div
-          className={`flex flex-col cursor-pointer gap-[6px] z-[1001] md:hidden ${menuOpen ? "active" : ""
-            }`}
-          onClick={toggleMenu}
-          aria-label="Toggle navigation"
-        >
-          <span
-            className={`block w-[22px] h-[2px] bg-text-light transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-[8px]" : ""
-              }`}
-          ></span>
-          <span
-            className={`block w-[22px] h-[2px] bg-text-light transition-all duration-300 ${menuOpen ? "opacity-0" : ""
-              }`}
-          ></span>
-          <span
-            className={`block w-[22px] h-[2px] bg-text-light transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-[8px]" : ""
-              }`}
-          ></span>
-        </div>
+        <div className="flex items-center gap-2 md:gap-4">
 
-        <ul
-          className={`flex items-center list-none gap-8 md:flex ${menuOpen
-              ? "fixed top-0 right-0 w-[75%] h-screen bg-white flex-col justify-center translate-x-0 shadow-[-10px_0_30px_-15px_rgba(0,0,0,0.1)]"
-              : "fixed top-0 right-0 w-[75%] h-screen bg-white flex-col justify-center translate-x-full transition-transform duration-300 md:relative md:w-auto md:h-auto md:bg-transparent md:flex-row md:translate-x-0 md:shadow-none"
-            }`}
-        >
+          {/* We moved the mobile toggle down, after the ul and theme button, so that it sits on the far right */}
+          <ul
+            className={`flex items-center list-none gap-8 md:flex ${menuOpen
+                ? "fixed top-0 right-0 w-[75%] h-screen bg-bg-dark flex-col justify-center translate-x-0 shadow-[-10px_0_30px_-15px_rgba(0,0,0,0.1)]"
+                : "fixed top-0 right-0 w-[75%] h-screen bg-bg-dark flex-col justify-center translate-x-full transition-transform duration-300 md:relative md:w-auto md:h-auto md:bg-transparent md:flex-row md:translate-x-0 md:shadow-none"
+              }`}
+          >
           {menuItems.map((item) => (
             <li key={item.label}>
               <a
@@ -162,6 +148,37 @@ function Navbar() {
             </a>
           </li>
         </ul>
+
+        {/* Theme Toggle Button */}
+        <button
+          onClick={toggleTheme}
+          className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors flex items-center justify-center text-text-light z-[1001]"
+          aria-label="Toggle Dark Mode"
+        >
+          {isDarkMode ? <LightModeOutlinedIcon fontSize="small" className="text-yellow-400" /> : <DarkModeOutlinedIcon fontSize="small" />}
+        </button>
+
+        {/* Mobile Toggle */}
+        <div
+          className={`flex flex-col cursor-pointer gap-[6px] z-[1001] md:hidden ${menuOpen ? "active" : ""
+            }`}
+          onClick={toggleMenu}
+          aria-label="Toggle navigation"
+        >
+          <span
+            className={`block w-[22px] h-[2px] bg-text-light transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-[8px]" : ""
+              }`}
+          ></span>
+          <span
+            className={`block w-[22px] h-[2px] bg-text-light transition-all duration-300 ${menuOpen ? "opacity-0" : ""
+              }`}
+          ></span>
+          <span
+            className={`block w-[22px] h-[2px] bg-text-light transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-[8px]" : ""
+              }`}
+          ></span>
+        </div>
+      </div>
       </div>
     </nav>
   );

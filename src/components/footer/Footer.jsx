@@ -5,7 +5,7 @@ import XIcon from "@mui/icons-material/X";
 
 function Footer() {
   return (
-    <footer className="bg-bg-light py-10 text-center flex flex-col items-center gap-5 font-sans border-t border-gray-100">
+    <footer className="bg-bg-light py-10 text-center flex flex-col items-center gap-5 font-sans border-t border-gray-100 dark:border-gray-800">
       <div className="flex gap-6 mb-2.5">
         <a
           href="https://github.com/Smeeks01only"
