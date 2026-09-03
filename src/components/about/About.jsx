@@ -14,7 +14,7 @@ function About() {
 
   return (
     <section id="about" className="py-[100px] px-6 bg-bg-light text-text-light overflow-hidden font-sans">
-      <div className="w-full max-w-[1200px] mx-auto">
+      <div className="w-full max-w-[1440px] mx-auto">
         <div className="flex items-center mb-10">
           <h2 className="text-[clamp(1.5rem,5vw,2rem)] font-bold text-text-light flex items-center whitespace-nowrap">
             <span className="text-primary-color font-mono text-xl mr-2 font-normal">01.</span> About Me

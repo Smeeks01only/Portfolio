@@ -58,7 +58,7 @@ function Projects() {
 
   return (
     <section id="projects" className="py-[100px] bg-bg-light font-sans">
-      <div className="w-full max-w-[1200px] mx-auto px-6">
+      <div className="w-full max-w-[1440px] mx-auto px-6">
         <div className="flex items-center mb-10">
           <h2 className="text-[clamp(1.5rem,5vw,2rem)] font-bold text-text-light flex items-center whitespace-nowrap">
             <span className="text-primary-color font-mono text-xl mr-2 font-normal">03.</span> Projects
@@ -66,7 +66,7 @@ function Projects() {
           <div className="h-[1px] bg-gray-200 w-[300px] ml-5 block md:w-[200px] sm:w-[100px]"></div>
         </div>
 
-        <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-5 mt-12">
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(400px,1fr))] gap-5 mt-12">
           {projects.map((project, index) => (
             <a
               href={project.liveLink !== "#" ? project.liveLink : project.githubLink}

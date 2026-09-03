@@ -4,7 +4,7 @@ import Hero_Image from "../../assets/images/Hello World!.svg";
 function Hero() {
   return (
     <section id="home" className="min-h-screen bg-bg-dark py-[100px] flex items-center overflow-hidden font-sans">
-      <div className="w-full max-w-[1200px] mx-auto px-6">
+      <div className="w-full max-w-[1440px] mx-auto px-6">
         {/* Added hero-grid to match about-grid structure */}
         <div className="flex items-center justify-between gap-8 w-full max-[900px]:flex-col max-[900px]:text-center max-[900px]:pt-0">
           <div className="flex-1 max-w-[600px] opacity-0 translate-y-[30px] animate-fadeIn max-[900px]:flex max-[900px]:flex-col max-[900px]:items-center">

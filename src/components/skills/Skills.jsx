@@ -38,7 +38,7 @@ function Skills() {
 
   return (
     <section id="skills" className="py-[100px] bg-bg-dark font-sans">
-      <div className="w-full max-w-[1200px] mx-auto px-6">
+      <div className="w-full max-w-[1440px] mx-auto px-6">
         <div className="flex items-center mb-10">
           <h2 className="text-[clamp(1.5rem,5vw,2rem)] font-bold text-text-light flex items-center whitespace-nowrap">
             <span className="text-primary-color font-mono text-xl mr-2 font-normal">02.</span> Skills

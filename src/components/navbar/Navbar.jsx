@@ -97,7 +97,7 @@ function Navbar() {
           : ""
         }`}
     >
-      <div className="flex justify-between items-center w-full max-w-[1200px] mx-auto px-6">
+      <div className="flex justify-between items-center w-full max-w-[1440px] mx-auto px-6">
         <a href="#home" className="flex items-center group z-[1001]">
           <img
             src={Smeeks}
@@ -134,19 +134,7 @@ function Navbar() {
             </li>
           ))}
 
-          {/* The CTA Button: Crucial for recruiters */}
-          <li className="mt-5 md:mt-0">
-            <a
-              href="/resume.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border border-primary-color text-primary-color px-4 py-2 rounded-lg text-sm transition-all duration-300 flex items-center gap-[5px] hover:bg-primary-color hover:text-white no-underline font-medium"
-              onClick={() => setMenuOpen(false)}
-            >
-              <FileDownloadOutlinedIcon fontSize="small" />
-              <span className="label">Resume</span>
-            </a>
-          </li>
+          
         </ul>
 
         {/* Theme Toggle Button */}
