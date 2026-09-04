@@ -93,7 +93,7 @@ function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 w-full h-[80px] flex items-center z-[1000] transition-all duration-300 bg-transparent ${scrolled
-          ? "bg-white/90 dark:bg-[#0f172a]/90 h-[70px] shadow-[0_1px_0_rgba(0,0,0,0.06)] backdrop-blur-md"
+          ? "bg-white/90 dark:bg-black/90 h-[70px] shadow-[0_1px_0_rgba(0,0,0,0.06)] backdrop-blur-md"
           : ""
         }`}
     >
@@ -143,7 +143,11 @@ function Navbar() {
           className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors flex items-center justify-center text-text-light z-[1001]"
           aria-label="Toggle Dark Mode"
         >
-          {isDarkMode ? <LightModeOutlinedIcon fontSize="small" className="text-yellow-400" /> : <DarkModeOutlinedIcon fontSize="small" />}
+          {isDarkMode ? (
+              <LightModeOutlinedIcon className="text-text-light" />
+            ) : (
+              <DarkModeOutlinedIcon className="text-text-light" />
+            )}
         </button>
 
         {/* Mobile Toggle */}

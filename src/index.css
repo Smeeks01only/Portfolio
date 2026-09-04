@@ -5,22 +5,22 @@
 @layer base {
   :root {
     --bg-dark: #FFFFFF;
-    --bg-light: #F8F9FA;
-    --bg-shadow: #F1F3F5;
-    --primary-color: #2563EB;
-    --secondary-color: #E8EDFB;
-    --text-light: #111827;
-    --text-dim: #6B7280;
+    --bg-light: #F9FAFB;
+    --bg-shadow: #E5E7EB;
+    --primary-color: #111827;
+    --secondary-color: #D1D5DB;
+    --text-light: #000000;
+    --text-dim: #4B5563;
   }
 
   .dark {
-    --bg-dark: #0f172a;
-    --bg-light: #1e293b;
-    --bg-shadow: #020617;
-    --primary-color: #3b82f6;
-    --secondary-color: #1e3a8a;
-    --text-light: #f8fafc;
-    --text-dim: #94a3b8;
+    --bg-dark: #000000;
+    --bg-light: #171717;
+    --bg-shadow: #0A0A0A;
+    --primary-color: #F9FAFB;
+    --secondary-color: #262626;
+    --text-light: #FFFFFF;
+    --text-dim: #A3A3A3;
   }
 
   html {
