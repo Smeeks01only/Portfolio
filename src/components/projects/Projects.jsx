@@ -68,10 +68,8 @@ function Projects() {
 
         <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fill,minmax(400px,1fr))] gap-5 mt-12">
           {projects.map((project, index) => (
-            <a
-              href={project.liveLink !== "#" ? project.liveLink : project.githubLink}
-              target="_blank"
-              rel="noopener noreferrer"
+            <div
+              onClick={() => window.open(project.liveLink !== "#" ? project.liveLink : project.githubLink, "_blank", "noopener,noreferrer")}
               className="bg-bg-dark p-8 rounded-xl transition-all duration-[250ms] flex flex-col h-full border border-gray-100 dark:border-gray-800 hover:-translate-y-2 hover:border-primary-color hover:shadow-[0_8px_30px_rgba(37,99,235,0.08)] group no-underline cursor-pointer"
               key={index}
             >
@@ -114,7 +112,7 @@ function Projects() {
                   <li className="font-mono text-[0.85rem] text-text-dim bg-primary-color/5 px-3 py-1 rounded-full" key={i}>{tech}</li>
                 ))}
               </ul>
-            </a>
+            </div>
           ))}
         </div>
 
