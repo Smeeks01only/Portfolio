@@ -11,6 +11,7 @@
     --secondary-color: #D1D5DB;
     --text-light: #000000;
     --text-dim: #4B5563;
+    --dot-color: rgba(0, 0, 0, 0.08);
   }
 
   .dark {
@@ -21,6 +22,7 @@
     --secondary-color: #262626;
     --text-light: #FFFFFF;
     --text-dim: #A3A3A3;
+    --dot-color: rgba(255, 255, 255, 0.08);
   }
 
   html {
@@ -31,6 +33,11 @@
   body {
     @apply bg-bg-dark text-text-dim font-sans antialiased;
     line-height: 1.6;
+  }
+
+  section {
+    background-image: radial-gradient(var(--dot-color) 1.5px, transparent 1.5px);
+    background-size: 30px 30px;
   }
 
   h1, h2, h3, h4, h5, h6 {

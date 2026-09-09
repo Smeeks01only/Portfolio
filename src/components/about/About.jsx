@@ -19,7 +19,7 @@ function About() {
           <h2 className="text-[clamp(1.5rem,5vw,2rem)] font-bold text-text-light flex items-center whitespace-nowrap">
             <span className="text-primary-color font-mono text-xl mr-2 font-normal">01.</span> About Me
           </h2>
-          <div className="h-[1px] bg-gray-200 w-[300px] ml-5 block md:w-[200px] sm:w-[100px]"></div>
+          
         </div>
         {/* 1. Single Column Layout */}
         <div className="flex flex-col gap-8 items-start">

@@ -43,7 +43,7 @@ function Skills() {
           <h2 className="text-[clamp(1.5rem,5vw,2rem)] font-bold text-text-light flex items-center whitespace-nowrap">
             <span className="text-primary-color font-mono text-xl mr-2 font-normal">02.</span> Skills
           </h2>
-          <div className="h-[1px] bg-gray-200 w-[300px] ml-5 block md:w-[200px] sm:w-[100px]"></div>
+          
         </div>
 
         <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-6 mt-12">
