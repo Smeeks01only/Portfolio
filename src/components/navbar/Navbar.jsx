@@ -111,8 +111,8 @@ function Navbar() {
           {/* We moved the mobile toggle down, after the ul and theme button, so that it sits on the far right */}
           <ul
             className={`flex items-center list-none gap-8 md:flex ${menuOpen
-                ? "fixed top-0 right-0 w-[75%] h-screen bg-white/90 dark:bg-black/90 backdrop-blur-md flex-col justify-center translate-x-0 shadow-[-10px_0_30px_-15px_rgba(0,0,0,0.1)]"
-                : "fixed top-0 right-0 w-[75%] h-screen bg-white/90 dark:bg-black/90 backdrop-blur-md flex-col justify-center translate-x-full transition-transform duration-300 md:relative md:w-auto md:h-auto md:bg-transparent md:backdrop-blur-none md:flex-row md:translate-x-0 md:shadow-none"
+                ? "fixed top-0 right-0 w-[75%] h-screen bg-white/60 dark:bg-black/60 backdrop-blur-2xl flex-col justify-center translate-x-0 shadow-[-10px_0_30px_-15px_rgba(0,0,0,0.1)]"
+                : "fixed top-0 right-0 w-[75%] h-screen bg-white/60 dark:bg-black/60 backdrop-blur-2xl flex-col justify-center translate-x-full transition-transform duration-300 md:relative md:w-auto md:h-auto md:bg-transparent md:backdrop-blur-none md:flex-row md:translate-x-0 md:shadow-none"
               }`}
           >
           {menuItems.map((item) => (
