@@ -46,7 +46,7 @@ function Skills() {
           
         </div>
 
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-6 mt-12">
+        <div className="grid grid-cols-1 sm:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-6 mt-12">
           {skills.map((skillGroup, index) => (
             <div className="bg-bg-light p-8 rounded-xl transition-all duration-300 border border-gray-100 dark:border-gray-800 hover:-translate-y-1 hover:border-primary-color hover:shadow-[0_8px_30px_rgba(37,99,235,0.08)] group" key={index}>
               <div className="mb-6">

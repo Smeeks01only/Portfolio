@@ -66,7 +66,7 @@ function Projects() {
           
         </div>
 
-        <div className="grid grid-cols-[repeat(auto-fill,minmax(400px,1fr))] gap-5 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fill,minmax(400px,1fr))] gap-5 mt-12">
           {projects.map((project, index) => (
             <a
               href={project.liveLink !== "#" ? project.liveLink : project.githubLink}
