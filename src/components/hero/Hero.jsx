@@ -58,7 +58,7 @@ function Hero() {
           <div className="flex-1 relative flex justify-center w-full max-w-[450px] max-[900px]:max-w-[350px] max-[900px]:mb-8 opacity-0 translate-y-[30px] animate-fadeIn [animation-delay:0.4s]">
             <div className="absolute w-full h-full bg-primary-color blur-[120px] opacity-[0.08] z-0 rounded-full top-[10%]"></div>
             <img
-              src={Hero_Image}
+              src={Hero_Image.src}
               alt="Tinashe Dzikiti - Software Engineer"
               className="w-full relative z-10 animate-float"
             />

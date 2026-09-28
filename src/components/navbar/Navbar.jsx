@@ -113,7 +113,7 @@ function Navbar() {
       <div className="flex justify-between items-center w-full max-w-[1440px] mx-auto px-6">
         <a href="#home" className="flex items-center group z-[1001]">
           <img
-            src={Smeeks}
+            src={Smeeks.src}
             alt="Smeeks Logo"
             className="w-[40px] h-auto transition-transform duration-300 group-hover:rotate-[10deg] dark:invert dark:opacity-90"
           />
