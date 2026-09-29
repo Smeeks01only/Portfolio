@@ -39,12 +39,12 @@ function Projects() {
     },
 
      {
-      title: "Campus Sports Blog",
+      title: "CreditScore",
       description:
-        "A full-stack blog platform for university sports news. Built with a Django backend and a responsive template engine.",
-      tech: ["Django", "Python", "PostgreSQL"],
-      githubLink: "https://github.com/Smeeks01only/sports-blog",
-      liveLink: "#", // Add live link if you have one
+        "An ML-powered web app that estimates credit risk scores without SSN or hard inquiries. Features Explainable AI (SHAP) to provide transparent insights into financial factors, and a premium tracking dashboard.",
+      tech: ["Next.js", "Django REST", "scikit-learn", "SHAP", "Tailwind CSS"],
+      githubLink: "https://github.com/Smeeks01only/CreditScore",
+      liveLink: "#",
     },
     {
       title: "View More Projects",
