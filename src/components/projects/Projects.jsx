@@ -39,12 +39,12 @@ function Projects() {
     },
 
      {
-      title: "CreditScore",
+      title: "inCredible",
       description:
         "An ML-powered web app that estimates credit risk scores without SSN or hard inquiries. Features Explainable AI (SHAP) to provide transparent insights into financial factors, and a premium tracking dashboard.",
       tech: ["Next.js", "Django REST", "scikit-learn", "SHAP", "Tailwind CSS"],
       githubLink: "https://github.com/Smeeks01only/CreditScore",
-      liveLink: "#",
+      liveLink: "https://credit-score-silk.vercel.app",
     },
     {
       title: "View More Projects",

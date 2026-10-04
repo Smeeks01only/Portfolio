@@ -1684,15 +1684,17 @@ function Projects() {
             liveLink: "https://the-smeeks-bot.pages.dev"
         },
         {
-            title: "Campus Sports Blog",
-            description: "A full-stack blog platform for university sports news. Built with a Django backend and a responsive template engine.",
+            title: "inCredible",
+            description: "An ML-powered web app that estimates credit risk scores without SSN or hard inquiries. Features Explainable AI (SHAP) to provide transparent insights into financial factors, and a premium tracking dashboard.",
             tech: [
-                "Django",
-                "Python",
-                "PostgreSQL"
+                "Next.js",
+                "Django REST",
+                "scikit-learn",
+                "SHAP",
+                "Tailwind CSS"
             ],
-            githubLink: "https://github.com/Smeeks01only/sports-blog",
-            liveLink: "#"
+            githubLink: "https://github.com/Smeeks01only/CreditScore",
+            liveLink: "https://credit-score-silk.vercel.app"
         },
         {
             title: "View More Projects",
