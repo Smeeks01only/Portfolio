@@ -38,7 +38,7 @@ function Footer() {
           Designed & Built by Tinashe B Dzikiti
         </a>
         <p className="text-gray-400 text-[0.8rem]">
-          &copy; {new Date().getFullYear()} Harare, Zimbabwe
+          &copy; {new Date().getFullYear()} 
         </p>
       </div>
     </footer>
