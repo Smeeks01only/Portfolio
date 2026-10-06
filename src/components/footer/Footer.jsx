@@ -30,7 +30,7 @@ function Footer() {
 
       <div className="flex flex-col items-center">
         <a
-          href="https://github.com/Smeeks01only/portfolio-v1"
+          href="https://github.com/Smeeks01only/Portfolio"
           target="_blank"
           rel="noreferrer"
           className="font-mono text-text-dim text-[0.9rem] no-underline transition-colors duration-300 block mb-2.5 hover:text-primary-color"
