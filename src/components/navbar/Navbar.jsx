@@ -16,7 +16,7 @@ function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
-  const { isDarkMode, toggleTheme } = useTheme();
+  const { isDarkMode, toggleTheme, mounted } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -156,11 +156,15 @@ function Navbar() {
           className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors flex items-center justify-center text-text-light z-[1001]"
           aria-label="Toggle Dark Mode"
         >
-          {isDarkMode ? (
+          {mounted ? (
+            isDarkMode ? (
               <LightModeOutlinedIcon className="text-text-light" />
             ) : (
               <DarkModeOutlinedIcon className="text-text-light" />
-            )}
+            )
+          ) : (
+            <span className="w-6 h-6 inline-block" aria-hidden="true" />
+          )}
         </button>
 
         {/* Mobile Toggle */}

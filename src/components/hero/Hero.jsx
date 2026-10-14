@@ -8,10 +8,7 @@ function Hero() {
         {/* Added hero-grid to match about-grid structure */}
         <div className="flex items-center justify-between gap-8 w-full max-[900px]:flex-col max-[900px]:text-center max-[900px]:pt-0">
           <div className="flex-1 max-w-[600px] opacity-0 translate-y-[30px] animate-fadeIn max-[900px]:flex max-[900px]:flex-col max-[900px]:items-center">
-            <div className="inline-flex items-center gap-2 bg-primary-color/10 text-primary-color px-3 py-1.5 rounded-full text-sm font-medium mb-6 border border-primary-color/20 [animation-delay:0.1s] max-[900px]:hidden">
-              <span className="w-2 h-2 bg-primary-color rounded-full shadow-[0_0_10px_theme('colors.primary-color')] animate-pulse"></span>
-              Available for Work
-            </div>
+            
 
             <h1 className="text-[3.5rem] font-extrabold text-text-light mb-2 leading-[1.1] max-[900px]:text-[2.5rem]">
               Hi, I'm Tinashe Basil Dzikiti
