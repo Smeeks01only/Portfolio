@@ -39,7 +39,7 @@ function Hero() {
                 <span className="text-gray-300">•</span>
                 <span className="font-mono text-text-light">React</span>
                 <span className="text-gray-300">•</span>
-                <span className="font-mono text-text-light">TensorFlow</span>
+                <span className="font-mono text-text-light">AI & ML</span>
                 <span className="text-gray-300">•</span>
                 <span className="font-mono text-text-light">Java</span>
                 <span className="text-gray-300">•</span>
