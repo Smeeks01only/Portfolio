@@ -267,7 +267,7 @@ function About() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "grid grid-cols-2 gap-4 mt-8 max-[900px]:grid-cols-1",
                                 children: highlights.map((item, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "bg-bg-dark p-4 rounded-lg flex items-center gap-4 transition-all duration-300 border border-gray-100 dark:border-gray-800 hover:-translate-y-1 hover:border-primary-color hover:shadow-[0_4px_20px_rgba(37,99,235,0.08)]",
+                                        className: "glass-surface glass-surface-hover p-4 rounded-2xl flex items-center gap-4 transition-all duration-300 hover:-translate-y-1",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "text-primary-color text-[1.5rem] flex items-center",
@@ -396,7 +396,7 @@ function Contact() {
                         className: "max-w-[800px] mx-auto text-center mt-12 mb-12",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "inline-flex items-center gap-2 bg-primary-color/5 text-primary-color px-4 py-2 rounded-full text-sm font-mono mb-8 border border-primary-color/10",
+                                className: "inline-flex items-center gap-2 glass-pill text-primary-color px-4 py-2 rounded-full text-sm font-mono mb-8",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "w-2 h-2 bg-primary-color rounded-full shadow-[0_0_10px_theme('colors.primary-color')] animate-pulse"
@@ -440,7 +440,7 @@ function Contact() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: "mailto:sirbasil.1000@gmail.com",
-                                className: "inline-flex items-center justify-center gap-3 bg-primary-color text-bg-dark px-10 py-5 rounded-full font-semibold text-[1.1rem] transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_10px_40px_rgba(0,0,0,0.1)] dark:hover:shadow-[0_10px_40px_rgba(255,255,255,0.15)] no-underline group",
+                                className: "inline-flex items-center justify-center gap-3 glass-btn-primary px-10 py-5 rounded-full font-semibold text-[1.1rem] transition-all duration-300 hover:scale-[1.03] hover:-translate-y-0.5 no-underline group",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$EmailOutlined$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                         className: "transition-transform duration-300 group-hover:-rotate-12"
@@ -656,7 +656,7 @@ function Hero() {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                         href: "#projects",
-                                        className: "px-8 py-4 rounded-lg font-semibold text-base transition-all duration-300 bg-primary-color text-bg-dark hover:opacity-90 hover:-translate-y-0.5 hover:shadow-lg no-underline",
+                                        className: "px-8 py-4 rounded-full font-semibold text-base transition-all duration-300 glass-btn-primary hover:-translate-y-0.5 hover:shadow-lg no-underline",
                                         children: "View My Work"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/hero/Hero.jsx",
@@ -665,7 +665,7 @@ function Hero() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                         href: "#contact",
-                                        className: "px-8 py-4 rounded-lg font-semibold text-base transition-all duration-300 text-text-dim border border-gray-200 dark:border-gray-700 hover:border-primary-color hover:text-primary-color no-underline",
+                                        className: "px-8 py-4 rounded-full font-semibold text-base transition-all duration-300 text-text-light glass-surface glass-surface-hover hover:-translate-y-0.5 no-underline",
                                         children: "Contact Me"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/hero/Hero.jsx",
@@ -887,8 +887,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$S
 ;
 ;
 ;
-;
-;
 function Navbar() {
     const [scrolled, setScrolled] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [menuOpen, setMenuOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
@@ -941,6 +939,7 @@ function Navbar() {
         return ()=>observers.forEach((obs)=>obs.disconnect());
     }, []);
     const toggleMenu = ()=>setMenuOpen(!menuOpen);
+    const glassPill = `glass-surface transition-all duration-300 ${scrolled ? "glass-surface-scrolled" : ""}`;
     const menuItems = [
         {
             href: "#home",
@@ -950,7 +949,7 @@ function Navbar() {
                 fontSize: "small"
             }, void 0, false, {
                 fileName: "[project]/src/components/navbar/Navbar.jsx",
-                lineNumber: 78,
+                lineNumber: 80,
                 columnNumber: 13
             }, this)
         },
@@ -962,7 +961,7 @@ function Navbar() {
                 fontSize: "small"
             }, void 0, false, {
                 fileName: "[project]/src/components/navbar/Navbar.jsx",
-                lineNumber: 84,
+                lineNumber: 86,
                 columnNumber: 13
             }, this)
         },
@@ -974,7 +973,7 @@ function Navbar() {
                 fontSize: "small"
             }, void 0, false, {
                 fileName: "[project]/src/components/navbar/Navbar.jsx",
-                lineNumber: 90,
+                lineNumber: 92,
                 columnNumber: 13
             }, this)
         },
@@ -986,7 +985,7 @@ function Navbar() {
                 fontSize: "small"
             }, void 0, false, {
                 fileName: "[project]/src/components/navbar/Navbar.jsx",
-                lineNumber: 96,
+                lineNumber: 98,
                 columnNumber: 13
             }, this)
         },
@@ -998,152 +997,198 @@ function Navbar() {
                 fontSize: "small"
             }, void 0, false, {
                 fileName: "[project]/src/components/navbar/Navbar.jsx",
-                lineNumber: 102,
+                lineNumber: 104,
                 columnNumber: 13
             }, this)
         }
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
-        className: `fixed top-0 left-0 w-full h-[80px] flex items-center z-[1000] transition-all duration-300 bg-transparent ${scrolled ? "bg-white/90 dark:bg-black/90 h-[70px] shadow-[0_1px_0_rgba(0,0,0,0.06)] backdrop-blur-md" : ""}`,
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex justify-between items-center w-full max-w-[1440px] mx-auto px-6",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                    href: "#home",
-                    className: "flex items-center group z-[1001]",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                        src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$Smeeks_Logo$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$Smeeks_Logo$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"].src,
-                        alt: "Smeeks Logo",
-                        className: "w-[40px] h-auto transition-transform duration-300 group-hover:rotate-[10deg] dark:invert dark:opacity-90"
+        className: "fixed top-4 left-0 w-full z-[1000] px-4 sm:px-6 pointer-events-none",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex justify-between items-center w-full max-w-[1440px] mx-auto gap-3",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                        href: "#home",
+                        onClick: ()=>setMenuOpen(false),
+                        className: `pointer-events-auto flex items-center justify-center w-12 h-12 rounded-full group z-[1001] hover:scale-105 ${glassPill}`,
+                        "aria-label": "Home",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                            src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$images$2f$Smeeks_Logo$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$images$2f$Smeeks_Logo$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"].src,
+                            alt: "Smeeks Logo",
+                            className: "w-[26px] h-auto transition-transform duration-300 group-hover:rotate-[10deg] dark:invert dark:opacity-90"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/navbar/Navbar.jsx",
+                            lineNumber: 118,
+                            columnNumber: 11
+                        }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/navbar/Navbar.jsx",
-                        lineNumber: 115,
-                        columnNumber: 11
-                    }, this)
-                }, void 0, false, {
-                    fileName: "[project]/src/components/navbar/Navbar.jsx",
-                    lineNumber: 114,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex items-center gap-2 md:gap-4",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                            className: `flex items-center list-none gap-8 md:flex ${menuOpen ? "fixed top-0 right-0 w-[75%] h-screen bg-white/60 dark:bg-black/60 backdrop-blur-2xl flex-col justify-center translate-x-0 shadow-[-10px_0_30px_-15px_rgba(0,0,0,0.1)]" : "fixed top-0 right-0 w-[75%] h-screen bg-white/60 dark:bg-black/60 backdrop-blur-2xl flex-col justify-center translate-x-full transition-transform duration-300 md:relative md:w-auto md:h-auto md:bg-transparent md:backdrop-blur-none md:flex-row md:translate-x-0 md:shadow-none"}`,
-                            children: menuItems.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                        href: item.href,
-                                        onClick: ()=>setMenuOpen(false),
-                                        className: `flex items-center gap-2 no-underline font-medium text-[0.95rem] transition-all duration-300 md:text-[0.95rem] text-[1.2rem] p-4 md:p-0 ${activeSection === item.id ? "text-primary-color md:border-b-2 md:border-primary-color md:pb-1" : "text-text-dim hover:text-primary-color"}`,
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: `flex md:hidden ${activeSection === item.id ? "text-primary-color" : "text-primary-color"}`,
-                                                children: item.icon
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/navbar/Navbar.jsx",
-                                                lineNumber: 142,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "label",
-                                                children: item.label
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/navbar/Navbar.jsx",
-                                                lineNumber: 145,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
+                        lineNumber: 112,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                        className: `pointer-events-auto hidden md:flex items-center list-none gap-1 px-2 py-1.5 rounded-full ${glassPill}`,
+                        children: menuItems.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                    href: item.href,
+                                    className: `flex items-center gap-2 no-underline font-medium text-[0.9rem] px-4 py-2 rounded-full transition-all duration-200 ${activeSection === item.id ? "bg-black/[0.08] dark:bg-white/[0.15] text-text-light font-semibold shadow-[inset_0_1px_0_rgba(255,255,255,0.5)] dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.18)]" : "text-text-dim hover:text-text-light hover:bg-black/[0.04] dark:hover:bg-white/[0.07]"}`,
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "label",
+                                        children: item.label
+                                    }, void 0, false, {
                                         fileName: "[project]/src/components/navbar/Navbar.jsx",
-                                        lineNumber: 133,
-                                        columnNumber: 15
+                                        lineNumber: 139,
+                                        columnNumber: 17
                                     }, this)
-                                }, item.label, false, {
+                                }, void 0, false, {
                                     fileName: "[project]/src/components/navbar/Navbar.jsx",
-                                    lineNumber: 132,
-                                    columnNumber: 13
-                                }, this))
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/navbar/Navbar.jsx",
-                            lineNumber: 125,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            onClick: toggleTheme,
-                            className: "p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors flex items-center justify-center text-text-light z-[1001]",
-                            "aria-label": "Toggle Dark Mode",
-                            children: mounted ? isDarkMode ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$LightModeOutlined$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                className: "text-text-light"
+                                    lineNumber: 131,
+                                    columnNumber: 15
+                                }, this)
+                            }, item.label, false, {
+                                fileName: "[project]/src/components/navbar/Navbar.jsx",
+                                lineNumber: 130,
+                                columnNumber: 13
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/navbar/Navbar.jsx",
+                        lineNumber: 126,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "pointer-events-auto flex items-center gap-2.5 z-[1001]",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                onClick: toggleTheme,
+                                className: `w-12 h-12 rounded-full flex items-center justify-center text-text-light hover:scale-105 ${glassPill}`,
+                                "aria-label": "Toggle Dark Mode",
+                                children: mounted ? isDarkMode ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$LightModeOutlined$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                    fontSize: "small",
+                                    className: "text-text-light"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/navbar/Navbar.jsx",
+                                    lineNumber: 154,
+                                    columnNumber: 17
+                                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$DarkModeOutlined$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                    fontSize: "small",
+                                    className: "text-text-light"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/navbar/Navbar.jsx",
+                                    lineNumber: 156,
+                                    columnNumber: 17
+                                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "w-5 h-5 inline-block",
+                                    "aria-hidden": "true"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/navbar/Navbar.jsx",
+                                    lineNumber: 159,
+                                    columnNumber: 15
+                                }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/navbar/Navbar.jsx",
-                                lineNumber: 161,
-                                columnNumber: 15
-                            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$DarkModeOutlined$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                className: "text-text-light"
-                            }, void 0, false, {
+                                lineNumber: 147,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                type: "button",
+                                className: `w-12 h-12 rounded-full flex flex-col items-center justify-center cursor-pointer gap-[5px] md:hidden hover:scale-105 ${glassPill}`,
+                                onClick: toggleMenu,
+                                "aria-label": "Toggle navigation",
+                                "aria-expanded": menuOpen,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: `block w-[18px] h-[2px] bg-text-light rounded-full transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-[7px]" : ""}`
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/navbar/Navbar.jsx",
+                                        lineNumber: 170,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: `block w-[18px] h-[2px] bg-text-light rounded-full transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/navbar/Navbar.jsx",
+                                        lineNumber: 175,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: `block w-[18px] h-[2px] bg-text-light rounded-full transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-[7px]" : ""}`
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/navbar/Navbar.jsx",
+                                        lineNumber: 180,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
                                 fileName: "[project]/src/components/navbar/Navbar.jsx",
                                 lineNumber: 163,
-                                columnNumber: 15
-                            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "w-6 h-6 inline-block",
-                                "aria-hidden": "true"
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/navbar/Navbar.jsx",
-                                lineNumber: 166,
-                                columnNumber: 13
+                                columnNumber: 11
                             }, this)
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/navbar/Navbar.jsx",
-                            lineNumber: 154,
-                            columnNumber: 9
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: `flex flex-col cursor-pointer gap-[6px] z-[1001] md:hidden ${menuOpen ? "active" : ""}`,
-                            onClick: toggleMenu,
-                            "aria-label": "Toggle navigation",
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/navbar/Navbar.jsx",
+                        lineNumber: 146,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/navbar/Navbar.jsx",
+                lineNumber: 110,
+                columnNumber: 7
+            }, this),
+            menuOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "fixed inset-0 bg-black/20 backdrop-blur-sm md:hidden pointer-events-auto z-[999]",
+                onClick: ()=>setMenuOpen(false),
+                "aria-hidden": "true"
+            }, void 0, false, {
+                fileName: "[project]/src/components/navbar/Navbar.jsx",
+                lineNumber: 191,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                className: `md:hidden fixed top-20 right-4 w-[calc(100%-2rem)] max-w-[280px] rounded-3xl p-3 list-none flex flex-col gap-1 z-[1000] transition-all duration-300 origin-top-right ${glassPill} ${menuOpen ? "pointer-events-auto opacity-100 scale-100 translate-y-0" : "pointer-events-none opacity-0 scale-95 -translate-y-2"}`,
+                children: menuItems.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                            href: item.href,
+                            onClick: ()=>setMenuOpen(false),
+                            className: `flex items-center gap-3 no-underline font-medium text-[1rem] px-4 py-3 rounded-2xl transition-all duration-200 ${activeSection === item.id ? "bg-black/[0.08] dark:bg-white/[0.15] text-text-light font-semibold" : "text-text-dim hover:text-text-light hover:bg-black/[0.04] dark:hover:bg-white/[0.07]"}`,
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: `block w-[22px] h-[2px] bg-text-light transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-[8px]" : ""}`
+                                    className: "flex text-primary-color",
+                                    children: item.icon
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/navbar/Navbar.jsx",
-                                    lineNumber: 177,
-                                    columnNumber: 11
+                                    lineNumber: 215,
+                                    columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: `block w-[22px] h-[2px] bg-text-light transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`
+                                    className: "label",
+                                    children: item.label
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/navbar/Navbar.jsx",
-                                    lineNumber: 181,
-                                    columnNumber: 11
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: `block w-[22px] h-[2px] bg-text-light transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-[8px]" : ""}`
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/navbar/Navbar.jsx",
-                                    lineNumber: 185,
-                                    columnNumber: 11
+                                    lineNumber: 216,
+                                    columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/navbar/Navbar.jsx",
-                            lineNumber: 171,
-                            columnNumber: 9
+                            lineNumber: 206,
+                            columnNumber: 13
                         }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/src/components/navbar/Navbar.jsx",
-                    lineNumber: 122,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "[project]/src/components/navbar/Navbar.jsx",
-            lineNumber: 113,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
+                    }, item.label, false, {
+                        fileName: "[project]/src/components/navbar/Navbar.jsx",
+                        lineNumber: 205,
+                        columnNumber: 11
+                    }, this))
+            }, void 0, false, {
+                fileName: "[project]/src/components/navbar/Navbar.jsx",
+                lineNumber: 197,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
         fileName: "[project]/src/components/navbar/Navbar.jsx",
-        lineNumber: 107,
+        lineNumber: 109,
         columnNumber: 5
     }, this);
 }
@@ -1274,7 +1319,7 @@ function Projects() {
                     className: "grid grid-cols-1 md:grid-cols-[repeat(auto-fill,minmax(400px,1fr))] gap-5 mt-12",
                     children: projects.map((project, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             onClick: ()=>window.open(project.liveLink !== "#" ? project.liveLink : project.githubLink, "_blank", "noopener,noreferrer"),
-                            className: "bg-bg-dark p-8 rounded-xl transition-all duration-[250ms] flex flex-col h-full border border-gray-100 dark:border-gray-800 hover:-translate-y-2 hover:border-primary-color hover:shadow-[0_8px_30px_rgba(37,99,235,0.08)] group no-underline cursor-pointer",
+                            className: "glass-surface glass-surface-hover p-8 rounded-2xl transition-all duration-[250ms] flex flex-col h-full hover:-translate-y-2 group no-underline cursor-pointer",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "flex justify-between items-center mb-8",
@@ -1364,9 +1409,9 @@ function Projects() {
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                    className: "flex flex-wrap list-none p-0 mt-5 gap-4",
+                                    className: "flex flex-wrap list-none p-0 mt-5 gap-3",
                                     children: project.tech.map((tech, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                            className: "font-mono text-[0.85rem] text-text-dim bg-primary-color/5 px-3 py-1 rounded-full",
+                                            className: "font-mono text-[0.85rem] text-text-dim glass-pill px-3 py-1 rounded-full",
                                             children: tech
                                         }, i, false, {
                                             fileName: "[project]/src/components/projects/Projects.jsx",
@@ -1483,7 +1528,7 @@ function Skills() {
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "grid grid-cols-1 sm:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-6 mt-12",
                     children: skills.map((skillGroup, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "bg-bg-light p-8 rounded-xl transition-all duration-300 border border-gray-100 dark:border-gray-800 hover:-translate-y-1 hover:border-primary-color hover:shadow-[0_8px_30px_rgba(37,99,235,0.08)] group",
+                            className: "glass-surface glass-surface-hover p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 group",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "mb-6",
@@ -1503,7 +1548,7 @@ function Skills() {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "flex flex-wrap gap-3",
                                     children: skillGroup.items.map((skill, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "font-mono text-[0.9rem] text-text-dim bg-primary-color/5 px-4 py-2 rounded-full transition-all duration-200 group-hover:text-primary-color group-hover:bg-primary-color/10 border border-transparent group-hover:border-primary-color/20",
+                                            className: "font-mono text-[0.9rem] text-text-dim glass-pill px-4 py-2 rounded-full transition-all duration-200 group-hover:text-primary-color group-hover:border-primary-color/25",
                                             children: skill
                                         }, i, false, {
                                             fileName: "[project]/src/components/skills/Skills.jsx",

@@ -24,10 +24,10 @@ function Hero() {
             </p>
 
             <div className="flex gap-4 [animation-delay:0.4s] opacity-0 translate-y-[30px] animate-fadeIn">
-              <a href="#projects" className="px-8 py-4 rounded-lg font-semibold text-base transition-all duration-300 bg-primary-color text-bg-dark hover:opacity-90 hover:-translate-y-0.5 hover:shadow-lg no-underline">
+              <a href="#projects" className="px-8 py-4 rounded-full font-semibold text-base transition-all duration-300 glass-btn-primary hover:-translate-y-0.5 hover:shadow-lg no-underline">
                 View My Work
               </a>
-              <a href="#contact" className="px-8 py-4 rounded-lg font-semibold text-base transition-all duration-300 text-text-dim border border-gray-200 dark:border-gray-700 hover:border-primary-color hover:text-primary-color no-underline">
+              <a href="#contact" className="px-8 py-4 rounded-full font-semibold text-base transition-all duration-300 text-text-light glass-surface glass-surface-hover hover:-translate-y-0.5 no-underline">
                 Contact Me
               </a>
             </div>

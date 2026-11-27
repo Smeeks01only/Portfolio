@@ -70,7 +70,7 @@ function Projects() {
           {projects.map((project, index) => (
             <div
               onClick={() => window.open(project.liveLink !== "#" ? project.liveLink : project.githubLink, "_blank", "noopener,noreferrer")}
-              className="bg-bg-dark p-8 rounded-xl transition-all duration-[250ms] flex flex-col h-full border border-gray-100 dark:border-gray-800 hover:-translate-y-2 hover:border-primary-color hover:shadow-[0_8px_30px_rgba(37,99,235,0.08)] group no-underline cursor-pointer"
+              className="glass-surface glass-surface-hover p-8 rounded-2xl transition-all duration-[250ms] flex flex-col h-full hover:-translate-y-2 group no-underline cursor-pointer"
               key={index}
             >
               <div className="flex justify-between items-center mb-8">
@@ -107,9 +107,9 @@ function Projects() {
                 <p>{project.description}</p>
               </div>
 
-              <ul className="flex flex-wrap list-none p-0 mt-5 gap-4">
+              <ul className="flex flex-wrap list-none p-0 mt-5 gap-3">
                 {project.tech.map((tech, i) => (
-                  <li className="font-mono text-[0.85rem] text-text-dim bg-primary-color/5 px-3 py-1 rounded-full" key={i}>{tech}</li>
+                  <li className="font-mono text-[0.85rem] text-text-dim glass-pill px-3 py-1 rounded-full" key={i}>{tech}</li>
                 ))}
               </ul>
             </div>

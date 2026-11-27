@@ -17,7 +17,7 @@ function Contact() {
         </div>
 
         <div className="max-w-[800px] mx-auto text-center mt-12 mb-12">
-          <div className="inline-flex items-center gap-2 bg-primary-color/5 text-primary-color px-4 py-2 rounded-full text-sm font-mono mb-8 border border-primary-color/10">
+          <div className="inline-flex items-center gap-2 glass-pill text-primary-color px-4 py-2 rounded-full text-sm font-mono mb-8">
             <span className="w-2 h-2 bg-primary-color rounded-full shadow-[0_0_10px_theme('colors.primary-color')] animate-pulse"></span>
             What's Next?
           </div>
@@ -34,7 +34,7 @@ function Contact() {
 
           <a
             href="mailto:sirbasil.1000@gmail.com"
-            className="inline-flex items-center justify-center gap-3 bg-primary-color text-bg-dark px-10 py-5 rounded-full font-semibold text-[1.1rem] transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_10px_40px_rgba(0,0,0,0.1)] dark:hover:shadow-[0_10px_40px_rgba(255,255,255,0.15)] no-underline group"
+            className="inline-flex items-center justify-center gap-3 glass-btn-primary px-10 py-5 rounded-full font-semibold text-[1.1rem] transition-all duration-300 hover:scale-[1.03] hover:-translate-y-0.5 no-underline group"
           >
             <EmailOutlinedIcon className="transition-transform duration-300 group-hover:-rotate-12" />
             Say Hello
