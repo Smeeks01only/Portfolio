@@ -3,7 +3,7 @@ import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import CodeOutlinedIcon from "@mui/icons-material/CodeOutlined";
 import WorkOutlineOutlinedIcon from "@mui/icons-material/WorkOutlineOutlined";
-import ContactMailOutlinedIcon from "@mui/icons-material/ContactMailOutlined";
+import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import { useTheme } from "../../hooks/useTheme";
@@ -101,7 +101,7 @@ function Navbar() {
       href: "#contact",
       id: "contact",
       label: "Contact",
-      icon: <ContactMailOutlinedIcon fontSize="small" />,
+      icon: <EmailOutlinedIcon fontSize="small" />,
     },
   ];
 
